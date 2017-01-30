@@ -1,4 +1,4 @@
-*Sean Bootstrap* is kind of a fork of the original frontend development environment <a href="https://github.com/olafgleba/sean">Sean</a> to build Gulp driven projects with Bootstrap.
+*Sean Bootstrap* is kind of a fork of <a href="https://github.com/olafgleba/sean">Sean</a> to build Gulp driven projects with Bootstrap.
 
 ## Getting started
 
