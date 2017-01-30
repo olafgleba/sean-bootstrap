@@ -1,0 +1,29 @@
+/**
+ * The compiled sass output of this file becomes
+ * the main CSS stylesheet to adress in your HTML
+ */
+
+
+/**
+* Import project configuration
+*
+* Import the `_configuration.scss` file first. It holds
+* all project wide variables and component override
+* variables.
+*/
+
+@import 'variables';
+@import 'bootstrap';
+@import 'bootstrap/theme';
+
+
+
+
+
+// Include vendor styles
+// @import 'vendor/owl.carousel';
+// @import 'vendor/tablesaw.bare';
+// @import 'vendor/fluidbox';
+
+// Project styles
+@import 'project/layout';

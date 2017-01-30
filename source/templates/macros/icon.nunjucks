@@ -1,0 +1,20 @@
+{% macro mean(file, size, title, desc, uid = randomHash()) -%}
+<svg class="icon {% if size %}icon--{{ size }} {% endif %}icon-{{ file }}" role="img" {% if title or desc %}aria-labelledby="{% if title %}title-{{ uid }}{% endif %}{% if desc %} desc-{{ uid }}{% endif %}" {% endif %}>
+{%- if title -%}
+<title id="title-{{ uid }}">{{ title }}</title>
+{%- endif -%}
+{%- if desc -%}
+<desc id="desc-{{ uid }}">{{ desc }}</desc>
+{%- endif -%}
+<use xlink:href="assets/img/icon-sprite.svg#icon-{{ file }}" /></svg>
+{%- endmacro %}
+
+
+{% macro loose(file, size) -%}
+<svg class="icon {% if size %}icon--{{ size }} {% endif %}icon-{{ file }}" role="img" aria-hidden="true"><use xlink:href="assets/img/icon-sprite.svg#icon-{{ file }}" /></svg>
+{%- endmacro %}
+
+
+{% macro linked(file, size) -%}
+<svg class="icon {% if size %}icon--{{ size }} {% endif %}icon-{{ file }}" role="img"><use xlink:href="assets/img/icon-sprite.svg#icon-{{ file }}" /></svg>
+{%- endmacro %}

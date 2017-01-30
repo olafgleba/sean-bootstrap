@@ -1,0 +1,257 @@
+/**
+ * layout.scss
+ */
+
+
+// .fonts-loaded body {
+//   font-family: $base-font-family-webfont;
+// }
+
+
+body { }
+
+
+.page {
+  margin: 0 auto;
+  max-width: 64em;
+  //padding: $base-spacing-unit;
+}
+
+
+
+
+/**
+ * SVG icon sprite
+ */
+
+// .icon {
+//   width: ($base-font-size / 16px) * 1em;
+//   height: ($base-font-size / 16px) * 1em;
+//   vertical-align: middle;
+//   display: inline-block;
+//
+//   transition: all 0.25s;
+//   fill: $black;
+//
+//   a:hover & {
+//     fill: lighten($black, 40%);
+//   }
+// }
+//
+// .icon--large {
+//   width: (($base-font-size * 2) / $base-font-size) * 1em;
+//   height: (($base-font-size * 2) / $base-font-size) * 1em;
+// }
+//
+// .icon--huge {
+//   width: (($base-font-size * 4) / $base-font-size) * 1em;
+//   height: (($base-font-size * 4) / $base-font-size) * 1em;
+// }
+
+
+
+
+// a {
+//   transition: all 0.5s;
+//   text-decoration: none;
+//
+//   &:hover, &:active, &:focus {
+//     color: $orange;
+//   }
+// }
+
+
+
+
+/**
+ * Enable automativ calculation of `srcset` and `sizes`
+ */
+img[data-sizes="auto"] {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: auto;
+}
+
+
+/**
+ * Enable transitions for layzy loaded images
+ *
+ */
+.lazyload,
+.lazyloading {
+    opacity: 0 !important;
+}
+
+.lazyloaded {
+  opacity: 1;
+  transition: opacity 0.25s ease-in !important;
+}
+
+
+
+/**
+ * list of headings
+ * @string {String}
+ */
+$headings: 'h1, h2, h3, h4, h5, h6';
+
+@each $item in $headings {
+  #{$item} {
+    font-style: normal;
+    font-weight: inherit;
+  }
+}
+
+
+// // overwrite fluidbox vendor declaration
+// // s. _fluidbox.scss (v. 1.4.3), line 56
+// .fluidbox-ghost {
+//   transition-duration: $transition-duration, $transition-duration;
+// }
+//
+// /**
+//  * Container for status loading animation, s. next below `progress`
+//  *
+//  * Appended dynamically to fluidbox loading event state (s. base.js)
+//  */
+// .is-loading-fluidbox {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   height: 100%;
+// }
+//
+// /**
+//  * Loading spinner, css animation
+//  *
+//  * Markup dynamically set in base.js:
+//  *   <div class="progress [progress--large][progress--small]"></div>
+//  */
+// @keyframes progress {
+//   to {transform: rotate(360deg);}
+// }
+//
+// .progress {
+//   position: relative;
+//   min-width: 50px;
+//   min-height: 50px;
+// }
+//
+// .progress::before {
+//   content: 'Loading...';
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   width: 24px;
+//   height: 24px;
+//   margin-top: -13px; /* width/2 + 1 */
+//   margin-left: -13px; /* width/2 + 1 */
+// }
+//
+// .progress:not(:required)::before {
+//   content: '';
+//   border-radius: 50%;
+//   border-style: solid;
+//   border-color: $progress-border-color;
+//   border-top-color: $progress-border-top-color;
+//   animation: progress 0.6s linear infinite;
+// }
+//
+// // Modifier
+// .progress--large {
+//   &::before {
+//     width: 48px;
+//     height: 48px;
+//     margin-top: -25px; /* width/2 + 1 */
+//     margin-left: -25px; /* width/2 + 1 */
+//   }
+//
+//   &:not(:required)::before {
+//     border-width: 6px;
+//   }
+// }
+//
+// .progress--small {
+//   &::before {
+//     width: 16px;
+//     height: 16px;
+//     margin-top: -9px; /* width/2 + 1 */
+//     margin-left: -9px; /* width/2 + 1 */
+//   }
+//
+//   &:not(:required)::before {
+//     border-width: 2px;
+//   }
+// }
+//
+//
+//
+//
+// /**
+//  * Image Gallery (fluidbox)
+//  */
+// .gallery {
+//   display: flex;
+//   flex-flow: row wrap;
+//   justify-content: space-between;
+// }
+//
+// .gallery a {
+//   margin-bottom: 1%;
+// }
+//
+// .col-4 {
+//   width: 49%;
+//   // fallback for .no-flexbox browser
+//   display: inline-block;
+//
+//   @include media-query (lap) {
+//     width: 32%;
+//   }
+//
+//   @include media-query (desk) {
+//     width: 24%;
+//   }
+// }
+//
+//
+//
+// /*header*/.page-header {
+//
+// }
+//
+// /*header*/.page-header--banner {
+//
+// }
+//
+//
+// /*footer*/.page-footer {
+//
+// }
+//
+//
+// /*footer*/.page-footer--contentinfo {
+//
+// }
+//
+//
+//
+// /*main*/.page-content {
+//
+// }
+//
+//
+// /*aside*/.sidebar {
+//
+// }
+//
+//
+// /*hx*/.section-heading {
+//
+// }
+//
+//
+// /*div*/.section-body {
+//
+// }
