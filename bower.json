@@ -9,7 +9,8 @@
     "respimage": "~1.4.0",
     "fluidbox": "1.4.3",
     "svg4everybody": "~2.0.0",
-    "fontfaceobserver": "^2.0.5"
+    "fontfaceobserver": "^2.0.5",
+    "bootstrap-sass": "^3.3.7"
   },
   "overrides": {
     "respimage": {
@@ -33,7 +34,5 @@
     "node_modules",
     "bower_components"
   ],
-  "devDependencies": {
-    "bootstrap-sass": "^3.3.7"
-  }
+  "devDependencies": {}
 }

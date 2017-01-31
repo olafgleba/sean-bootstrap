@@ -181,12 +181,10 @@ gulp.task('lint:scss', function() {
 gulp.task('compile:sass', function() {
   return gulp.src(paths.src.sass + '**/*.scss')
     .pipe(plugins.plumber({errorHandler: onError}))
-    .pipe(isProduction ? plugins.util.noop() : plugins.sourcemaps.init()) /* 1 */
     .pipe(plugins.sass({outputStyle: 'expanded', includePaths: [paths.bootstrap.dir +  'assets/stylesheets']}))
     .pipe(plugins.rename({suffix: '.min'}))
     .pipe(plugins.autoprefixer({ browsers: ['last 2 version'] }))
     .pipe(isProduction ? cachebust.resources() : plugins.util.noop())
-    .pipe(isProduction ? plugins.util.noop() : plugins.sourcemaps.write('./')) /* 1 */
     .pipe(isProduction ? plugins.csso() : plugins.util.noop()) /* 1 */
     .pipe(plugins.size())
     .pipe(gulp.dest(paths.app.css))
