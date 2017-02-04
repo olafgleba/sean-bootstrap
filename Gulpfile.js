@@ -83,14 +83,15 @@ var source       = 'source/';
 var bootstrapDir = './bower_components/bootstrap-sass/';
 
 var paths = {
-  app: {
-    root:   app,
-    assets: app + 'assets/',
-    css:    app + 'assets/css/',
-    libs:   app + 'assets/libs/',
-    img:    app + 'assets/img/'
+  app:       {
+    root:    app,
+    assets:  app + 'assets/',
+    css:     app + 'assets/css/',
+    libs:    app + 'assets/libs/',
+    fonts:   app + 'assets/fonts/',
+    img:     app + 'assets/img/'
   },
-  src: {
+  src:       {
     root:    source,
     favicon: source + 'favicon/',
     sass:    source + 'sass/',
@@ -443,6 +444,18 @@ gulp.task('copy:jquery', function() {
 
 
 
+
+/**
+ * Get bootstrap fonts and shove it to the destination folder.
+ */
+
+gulp.task('copy:bootstrap-fonts', function() {
+  return gulp.src(paths.bootstrap.dir + 'assets/fonts/bootstrap/*')
+    .pipe(gulp.dest(paths.app.fonts));
+});
+
+
+
 /**
  * Watch several files and folder for changes.
  *
@@ -624,6 +637,7 @@ gulp.task('build', function() {
       [
         'compile:sass',
         'copy:jquery',
+        'copy:bootstrap-fonts',
         'process:bootstrap',
         'process:base',
         'concat:plugins',
@@ -641,6 +655,7 @@ gulp.task('build', function() {
         'lint:scss',
         'compile:sass',
         'copy:jquery',
+        'copy:bootstrap-fonts',
         'lint:js',
         'process:bootstrap',
         'process:base',

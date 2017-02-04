@@ -14,16 +14,6 @@
 
 @import 'variables';
 @import 'bootstrap';
-@import 'bootstrap/theme';
 
-
-
-
-
-// Include vendor styles
-// @import 'vendor/owl.carousel';
-// @import 'vendor/tablesaw.bare';
-// @import 'vendor/fluidbox';
-
-// Project styles
-@import 'project/layout';
+// Our project theme file
+@import 'theme';

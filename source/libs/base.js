@@ -67,7 +67,8 @@ $(function() {
     speed: 500
   });
 
-  $('[data-toggle="tooltip"]').tooltip();
+  //$('[data-toggle="tooltip"]').tooltip();
+  $('.dropdown-toggle').dropdown();
 
 
 });
