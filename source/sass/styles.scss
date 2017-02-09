@@ -12,8 +12,17 @@
 * variables.
 */
 
+// Import custom variables afterwards
+@import 'custom-variables';
+
+// Import bootstrap variables first
 @import 'variables';
+
+// Import bootstrap css files
 @import 'bootstrap';
 
-// Our project theme file
+// Import custom variables afterwards
+@import 'font';
+
+// Import the project theme css file at last
 @import 'theme';

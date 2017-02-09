@@ -96,6 +96,7 @@ var paths = {
     favicon: source + 'favicon/',
     sass:    source + 'sass/',
     libs:    source + 'libs/',
+    fonts:   source + 'fonts/',
     img:     source + 'img/',
     tpls:    source + 'templates/'
   },
@@ -130,7 +131,7 @@ gulp.task('browser-sync', function() {
  */
 
 gulp.task('clean:app', function(ca) {
-    return del([paths.app.assets + '{css,libs,img,fonts,docs}/**/*', paths.app.root + '*.html'], ca)
+    return del([paths.app.assets + '{css,libs,img,fonts,docs}/**/*', paths.app.root + '**/*.html'], ca)
 });
 
 
@@ -238,7 +239,7 @@ var expandEnv = function(environment) {
  */
 
 gulp.task('process:templates', function() {
-  return gulp.src(paths.src.tpls + '*.nunjucks')
+  return gulp.src([paths.src.tpls + 'index.nunjucks', paths.src.tpls + 'modals/*.nunjucks'])
     .pipe(plugins.plumber({errorHandler: onError}))
     .pipe(isProduction ? cachebust.references() : plugins.util.noop()) /* 1 */
     .pipe(plugins.nunjucksRender({
@@ -248,6 +249,17 @@ gulp.task('process:templates', function() {
     .pipe(gulp.dest(paths.app.root));
 });
 
+
+gulp.task('process:templates-de', function() {
+  return gulp.src([paths.src.tpls + 'de/index.nunjucks', paths.src.tpls + 'de/modals/*.nunjucks'])
+    .pipe(plugins.plumber({errorHandler: onError}))
+    .pipe(isProduction ? cachebust.references() : plugins.util.noop()) /* 1 */
+    .pipe(plugins.nunjucksRender({
+      path: paths.src.tpls,
+      manageEnv: expandEnv
+    }))
+    .pipe(gulp.dest(paths.app.root + 'de/'));
+});
 
 
 
@@ -259,11 +271,12 @@ gulp.task('process:templates', function() {
  */
 
 gulp.task('process:images', function() {
-  return gulp.src([paths.src.img + '*.{png,jpg,jpeg}'])
+  return gulp.src([paths.src.img + '*.{png,jpg,jpeg,svg}'])
     .pipe(plugins.newer(paths.app.img))
     .pipe(plugins.imagemin([
         plugins.imagemin.jpegtran({progressive: true}),
-        plugins.imagemin.optipng()
+        plugins.imagemin.optipng(),
+        plugins.imagemin.svgo()
       ]
     ))
     .pipe(gulp.dest(paths.app.img));
@@ -394,7 +407,7 @@ gulp.task('process:bootstrap', function() {
 gulp.task('concat:plugins', function() {
   return merge(
     gulp.src(mainBowerFiles(), { base: 'bower_components'})
-      .pipe(plugins.filter(['**/*.js', '!**/{jquery.min,lazysizes,respimage}.{js,map}']))
+      .pipe(plugins.filter(['**/*.js', '!**/{jquery.min,lazysizes,respimage,bootstrap, bootstrap.min}.{js,map}']))
     ,
     gulp.src(paths.src.libs + 'vendor/*.js')
     )
@@ -450,7 +463,17 @@ gulp.task('copy:jquery', function() {
  */
 
 gulp.task('copy:bootstrap-fonts', function() {
-  return gulp.src(paths.bootstrap.dir + 'assets/fonts/bootstrap/*')
+  return gulp.src(paths.bootstrap.dir + 'assets/fonts/**/*')
+    .pipe(gulp.dest(paths.app.fonts));
+});
+
+
+/**
+ * Get custom fonts and shove it to the destination folder.
+ */
+
+gulp.task('copy:fonts', function() {
+  return gulp.src(paths.src.fonts + '**/*')
     .pipe(gulp.dest(paths.app.fonts));
 });
 
@@ -469,7 +492,7 @@ gulp.task('watch', function() {
 
   gulp.watch(paths.src.sass + '**/*.scss',
     [
-      'lint:scss',
+      //'lint:scss',
       'process:modernizr',
       'compile:sass'
     ]
@@ -499,9 +522,16 @@ gulp.task('watch', function() {
   ).on('change', bs.reload);
 
 
-  gulp.watch(paths.src.tpls + '*.nunjucks',
+  gulp.watch([paths.src.tpls + '*.nunjucks', paths.src.tpls + 'modals/*.nunjucks'],
     [
       'process:templates'
+    ]
+  ).on('change', bs.reload);
+
+
+  gulp.watch([paths.src.tpls + 'de/*.nunjucks', paths.src.tpls + 'de/modals/*.nunjucks'],
+    [
+      'process:templates-de'
     ]
   ).on('change', bs.reload);
 
@@ -637,6 +667,7 @@ gulp.task('build', function() {
       [
         'compile:sass',
         'copy:jquery',
+        'copy:fonts',
         'copy:bootstrap-fonts',
         'process:bootstrap',
         'process:base',
@@ -645,16 +676,18 @@ gulp.task('build', function() {
         'process:images',
         'process:icons'
       ],
-      'process:templates'
+      'process:templates',
+      'process:templates-de'
     );
 
   } else {
 
-    runSequence('clean:app', 'process:modernizr', 'process:templates',
+    runSequence('clean:app', 'process:modernizr', 'process:templates', 'process:templates-de',
       [
         'lint:scss',
         'compile:sass',
         'copy:jquery',
+        'copy:fonts',
         'copy:bootstrap-fonts',
         'lint:js',
         'process:bootstrap',
