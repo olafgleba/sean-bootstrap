@@ -1,0 +1,36 @@
+$c_blackiris:    #2c5574;
+$c_blackiris_20: #D5DDE3;
+$c_blackiris_40: #ACBBC7;
+$c_blackiris_60: #819AAB;
+
+$c_lightgrey:    #F5F5F0;
+
+
+// Fonts for convinience
+$museo-100: 'Museo Sans W01_100';
+$museo-300: 'Museo Sans W01_300';
+$museo-700: 'Museo Sans W01_700';
+
+
+// Interface variables
+
+$section-frame-bg: $c_blackiris;
+
+$section-frame-variant-1-bg: $c_blackiris_20;
+$section-frame-variant-2-bg: $c_blackiris_40;
+$section-frame-variant-3-bg: $c_lightgrey;
+$section-frame-variant-4-bg: #fff;
+
+$heading-color: $c_blackiris;
+
+$border-color: $c_blackiris;
+$border-color-variant-1: $c_blackiris_40;
+$border-color-variant-2: $c_blackiris_60;
+
+
+$separator-color: $c_blackiris_60;
+
+$link-color-invert: #fff;
+$link-hover-color-invert: $c_blackiris_40;
+
+$util-text-highlight: $c_blackiris;

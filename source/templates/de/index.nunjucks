@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="de" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <title>Sean Bootstrap</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="Olaf Gleba, <og@olafgleba.de>" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {% include 'includes/favicon.nunjucks' %}
+  {% import 'macros/icon.nunjucks' as icon %}
+
+  <link rel="stylesheet" href="../assets/css/styles.min.css">
+
+  <script src="../assets/libs/vendor/modernizr-custom.min.js" async=""></script>
+  <script src="../assets/libs/vendor/plugins.images.min.js" async=""></script>
+</head>
+
+<body id="totop">
+
+  <header role="banner" class="section-header" data-spy="affix" data-offset-top="200" data-offset-bottom="200">
+
+    <div class="section-frame section-frame--navigation">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 u-text-right">
+            <ul class="list-horizontal list-horizontal--nav-language">
+              <li><a href="/">English</a></li>
+              <li class="current">Deutsch</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">Navigation +  Logo</div>
+      </div>
+    </div>
+
+
+  </header>
+
+
+  <main role="content" id="test">
+
+    <section>
+      <div class="section-frame section-frame--variant-1">
+        <div class="container u-padding-y-axis">
+          <h1 class="heading-section">Unser Stand</h1>
+        </div>
+      </div>
+
+      <div class="section-frame section-frame--variant-4">
+        <div class="container u-padding-y-axis">
+          <div>
+            <h2 class="heading-section--sub">Wo Sie uns finden</h2>
+          </div>
+
+          <div class="row">
+            <div class="col-md-8">
+              <p>
+                <img data-sizes="auto" src="http://placehold.it/480x320/FF4600/000000?text=fallback" data-srcset="http://placehold.it/480x320/FF4600/000000?text=480x320+/+9.26 480w, http://placehold.it/650x433/8ED42B/000000?text=750px+Breite 650w" alt="" class="lazyload" />
+              </p>
+              <p>
+                <a href="#0">Download Plan</a>
+              </p>
+            </div>
+            <div class="col-md-4">
+              <h3><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Location</h3>
+              <p>...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-frame section-frame--variant-3">
+        <div class="container u-padding-y-axis">
+          <div>
+            <h2 class="heading-section--sub">Event<br />Timetable</h2>
+          </div>
+
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="überschriftEins">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEins" aria-expanded="true" aria-controls"collapseEins">
+                    Klappbarer Eintrag #1
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseEins" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="überschriftEins">
+                <div class="panel-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="überschriftZwei">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseZwei" aria-expanded="false" aria-controls"collapseZwei">
+                    Klappbarer Eintrag #2
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseZwei" class="panel-collapse collapse" role="tabpanel" aria-labelledby="überschriftZwei">
+                <div class="panel-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="überschriftDrei">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseDrei" aria-expanded="false" aria-controls"collapseDrei">
+                    Klappbarer Eintrag #3
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseDrei" class="panel-collapse collapse" role="tabpanel" aria-labelledby="überschriftDrei">
+                <div class="panel-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section>
+      <div class="section-frame section-frame--variant-1">
+        <div class="container u-padding-y-axis">
+          <h1 class="heading-section">Discover our<br />products</h1>
+        </div>
+      </div>
+
+      <div class="section-frame section-frame--innovation">
+        <div class="container u-padding-y-axis">
+          <div>
+            <h2 class="heading-section--sub heading-section--sub--variant-1">Innovation</h2>
+          </div>
+
+          <p class="u-width-60percent u-color-invert">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate mollitia, consequatur labore facere ea molestias illo quis, ipsum at atque ullam aspernatur suscipit reiciendis! Magnam adipisci laboriosam blanditiis ipsum ut!</p>
+
+          <div class="row">
+            <div class="col-md-6 col-md-offset-2">
+              <p>
+                <img data-sizes="auto" src="http://placehold.it/480x320/FF4600/000000?text=fallback" data-srcset="http://placehold.it/480x320/FF4600/000000?text=480x320+/+9.26 480w, http://placehold.it/650x433/8ED42B/000000?text=750px+Breite 650w" alt="" class="lazyload" />
+              </p>
+            </div>
+            <div class="col-md-4">
+              <p>Box</p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="section-frame section-frame--variant-4">
+        <div class="container u-padding-y-axis">
+          <div>
+            <h2 class="heading-section--sub">Building infromation<br />modelling (Bim)</h2>
+          </div>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae eligendi ex cumque consequuntur. Maxime temporibus doloremque, itaque esse, a numquam fugit harum officiis quisquam? Perferendis sed explicabo, dolor porro architecto!</p>
+        </div>
+      </div>
+
+      <div class="section-frame section-frame--variant-3">
+        <div class="container u-padding-y-axis">
+          <div>
+            <h2 class="heading-section--sub">References</h2>
+          </div>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore necessitatibus vitae, atque sequi deleniti ex cum eos amet accusantium temporibus minima ducimus ea ipsum, dolorem quo, vel quae quam consectetur.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section>
+      <div class="section-frame section-frame--variant-1">
+        <div class="container u-padding-y-axis">
+          <h1 class="heading-section">See how we<br />innovate</h1>
+        </div>
+      </div>
+
+      <div class="section-frame section-frame--variant-4">
+        <div class="container u-padding-y-axis">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit minus et pariatur unde nobis reiciendis. Cumque iste harum tempora reiciendis culpa sapiente doloribus dicta nulla, labore, quidem voluptates a ducimus!</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section>
+      <div class="section-frame section-frame--variant-1">
+        <div class="container u-padding-y-axis">
+          <h1 class="heading-section">Get in<br />touch</h1>
+        </div>
+      </div>
+
+      <div class="section-frame section-frame--variant-3">
+        <div class="container u-padding-y-axis">
+          <div class="row">
+            <div class="col-md-6">
+              <div>
+                <h2 class="heading-section--sub">Press</h2>
+              </div>
+              <ul>
+                <li>list</li>
+                <li>list</li>
+                <li>list</li>
+              </ul>
+
+            </div>
+
+            <div class="col-md-6">
+              <div>
+                <h2 class="heading-section--sub">Contact</h2>
+              </div>
+              <p>Fließtext...</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <div class="section-frame">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            ©Copyright...
+          </div>
+          <div class="col-md-6">
+            <ul>
+              <li href="#0">Disclaimer</li>
+              <li href="#0">Privacy Policy</li>
+              <li href="#0">Imprint</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- <a id="backToTop" href="#totop">top</a>  -->
+
+  <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../assets/libs/vendor/jquery.min.js"><\/script>');</script>
+  <script src="../assets/libs/bootstrap.min.js"></script>
+  <script src="../assets/libs/vendor/plugins.min.js"></script>
+  <script src="../assets/libs/base.min.js"></script>
+
+</body>
+</html>
