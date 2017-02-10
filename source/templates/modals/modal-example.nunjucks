@@ -20,16 +20,15 @@
 
         <div class="image-box">
           <p class="image-box__img">
-            <img data-sizes="auto" src="http://placehold.it/480x320/FF4600/000000?text=fallback" data-srcset="http://placehold.it/384x320/FF4600/000000?text=384x320 384w, http://placehold.it/508x380/8ED42B/000000?text=508px+Breite 508w" alt="" class="lazyload" />
+            <img data-sizes="auto" src="http://placehold.it/385x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/384x320/ACBBC7/000000?text=384px+width 384w, http://placehold.it/508x380/ACBBC7/000000?text=508px+width 508w" alt="" class="lazyload" />
           </p>
-          <p class="image-box__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <p class="image-box__caption">Image caption possible...</p>
         </div>
 
         <div class="image-box">
           <p class="image-box__img">
-            <img data-sizes="auto" src="http://placehold.it/480x320/FF4600/000000?text=fallback" data-srcset="http://placehold.it/384x320/FF4600/000000?text=384x320 384w, http://placehold.it/508x380/8ED42B/000000?text=508px+Breite 508w" alt="" class="lazyload" />
+            <img data-sizes="auto" src="http://placehold.it/385x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/384x320/ACBBC7/000000?text=384px+width 384w, http://placehold.it/508x380/ACBBC7/000000?text=508px+width 508w" alt="" class="lazyload" />
           </p>
-          <p class="image-box__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         </div>
 
       </div>

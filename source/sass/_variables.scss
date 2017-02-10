@@ -57,8 +57,8 @@ $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
 
 $font-size-h1:            floor(($font-size-base * 5.45));
 $font-size-h2:            floor(($font-size-base * 3.55));
-$font-size-h3:            ceil(($font-size-base * 2.1));
-$font-size-h4:            ceil(($font-size-base * 1));
+$font-size-h3:            ceil(($font-size-base * 1.1));
+$font-size-h4:            ceil(($font-size-base * 1.1));
 $font-size-h5:            $font-size-base !default;
 $font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
 
@@ -821,7 +821,7 @@ $carousel-control-font-size:                  20px !default;
 $carousel-indicator-active-bg:                #fff !default;
 $carousel-indicator-border-color:             #fff !default;
 
-$carousel-caption-color:                      #fff !default;
+$carousel-caption-color:                      #000 !default;
 
 
 //== Close

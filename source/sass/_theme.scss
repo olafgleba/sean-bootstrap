@@ -133,7 +133,7 @@ $headings: 'h1, h2, h3, h4, h5, h6';
   text-transform: uppercase;
   padding: 12px;
   margin-top: 0;
-  margin-bottom: 36px;
+  margin-bottom: 48px;
 }
 
 .heading-section--sub--variant-1 {
@@ -271,6 +271,20 @@ $headings: 'h1, h2, h3, h4, h5, h6';
   }
 }
 
+
+
+
+
+/**
+ * ...
+ */
+
+.building-information,
+.innovate { }
+
+.building-information__item, .innovate__item {
+  margin-bottom: 36px;
+}
 
 
 
@@ -431,6 +445,11 @@ $headings: 'h1, h2, h3, h4, h5, h6';
 .u-padding-y-axis {
   padding-top: 2em;
   padding-bottom: 2em;
+}
+
+.u-padding-y-axis-large {
+  padding-top: 3.5em;
+  padding-bottom: 3.5em;
 }
 
 
@@ -1449,19 +1468,14 @@ $headings: 'h1, h2, h3, h4, h5, h6';
 // -----------------------------
 // Hidden by default for smaller viewports
 .carousel-caption {
-  position: absolute;
-  left: 15%;
-  right: 15%;
-  bottom: 20px;
-  z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  left: 0;
+  right: auto;
+  bottom: 0;
+  padding: 24px;
   color: $carousel-caption-color;
-  text-align: center;
+  background-color: rgba(#fff, 0.5);
+  text-align: left;
   text-shadow: $carousel-text-shadow;
-  & .btn {
-    text-shadow: none; // No shadow for button elements in carousel-caption
-  }
 }
 
 
@@ -1491,9 +1505,7 @@ $headings: 'h1, h2, h3, h4, h5, h6';
 
   // Show and left align the captions
   .carousel-caption {
-    left: 20%;
-    right: 20%;
-    padding-bottom: 30px;
+    //padding: 6px;
   }
 
   // Move up the indicators
