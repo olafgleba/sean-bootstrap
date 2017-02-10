@@ -111,6 +111,7 @@ $headings: 'h1, h2, h3, h4, h5, h6';
     font-family: $museo-100;
     margin-top: 0;
     hyphens: auto;
+    line-height: $line-height-base;
   }
 }
 
@@ -124,6 +125,7 @@ $headings: 'h1, h2, h3, h4, h5, h6';
   text-transform: uppercase;
   padding: 6px 12px;
   margin: 0;
+  line-height: 1;
 }
 
 .heading-section--sub {
@@ -134,6 +136,7 @@ $headings: 'h1, h2, h3, h4, h5, h6';
   padding: 12px;
   margin-top: 0;
   margin-bottom: 48px;
+  line-height: 1;
 }
 
 .heading-section--sub--variant-1 {
@@ -141,9 +144,15 @@ $headings: 'h1, h2, h3, h4, h5, h6';
   color: #fff;
 }
 
-
 .heading-section--sub--variant-2 {
   padding: 12px 0;
+}
+
+
+.heading-intermediate {
+  text-transform: uppercase;
+  font-size: floor(($font-size-base * 2.25));
+  line-height: 1;
 }
 
 
@@ -159,6 +168,7 @@ $headings: 'h1, h2, h3, h4, h5, h6';
   display: inline-block;
   border-top: 4px solid $border-color;
   background-color: #fff;
+  margin-bottom: 0;
 }
 
 .cta-link__href {
@@ -266,7 +276,7 @@ $headings: 'h1, h2, h3, h4, h5, h6';
 
   @media (min-width: $screen-sm-min) {
     &:last-child {
-      padding-bottom: 0;
+      padding-bottom: 6px;
     }
   }
 }
@@ -285,6 +295,21 @@ $headings: 'h1, h2, h3, h4, h5, h6';
 .building-information__item, .innovate__item {
   margin-bottom: 36px;
 }
+
+
+
+
+
+/**
+ * ...
+ */
+
+.references { }
+
+.references__title {
+
+}
+
 
 
 
@@ -452,6 +477,10 @@ $headings: 'h1, h2, h3, h4, h5, h6';
   padding-bottom: 3.5em;
 }
 
+.u-padding-bottom-large {
+  padding-bottom: 7em;
+}
+
 
 .u-margin-bottom {
   margin-bottom: 12px;
@@ -482,7 +511,6 @@ $headings: 'h1, h2, h3, h4, h5, h6';
 .u-text-highlight {
   font-family: $museo-700;
   color: $util-text-highlight;
-
 }
 
 .u-text-uppercase {
@@ -490,6 +518,13 @@ $headings: 'h1, h2, h3, h4, h5, h6';
 }
 
 
+
+.u-size-intermediate {
+  font-size: floor(($font-size-base * 2.55));
+}
+
+
+// status (media queries related)
 .is-hidden-xs {
   @media (max-width: $screen-xs-max) {
     display: none !important;
@@ -1471,7 +1506,7 @@ $headings: 'h1, h2, h3, h4, h5, h6';
   left: 0;
   right: auto;
   bottom: 0;
-  padding: 24px;
+  padding: 24px 12px 6px 12px;
   color: $carousel-caption-color;
   background-color: rgba(#fff, 0.5);
   text-align: left;
@@ -1505,7 +1540,7 @@ $headings: 'h1, h2, h3, h4, h5, h6';
 
   // Show and left align the captions
   .carousel-caption {
-    //padding: 6px;
+    padding: 24px;
   }
 
   // Move up the indicators

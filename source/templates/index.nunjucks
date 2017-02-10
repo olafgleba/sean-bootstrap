@@ -75,7 +75,7 @@
               </p>
             </div>
             <div class="col-md-4">
-              <h3 class="u-text-uppercase">Location</h3>
+              <h3 class="heading-intermediate">Location</h3>
               <p>We are looking to welcoming you at our booth:</p>
               <p><span class="u-text-highlight">Hall 3, Level 1, Booth C 11</span></p>
             </div>
@@ -502,8 +502,6 @@
 
             </div>
 
-
-
             <div class="text-center">
               <p class="cta-link">
                 <a href="#0" class="cta-link__href"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>Learn more about ideal standard and Bim</a>
@@ -516,59 +514,75 @@
       </div>
 
       <div class="section-frame section-frame--variant-3">
-        <div class="container u-padding-y-axis-large">
+        <div class="container u-padding-y-axis-large u-padding-bottom-large">
           <div>
             <h2 class="heading-section--sub u-margin-bottom-quadruple">References</h2>
           </div>
 
+          <div class="references">
 
-              <div class="row">
-                <div class="col-md-10 col-md-offset-1">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
 
-                  <div id="carousel-references" class="carousel slide" data-ride="carousel" data-interval="false">
-                    <ol class="carousel-indicators">
-                      <li data-target="#carousel-references" data-slide-to="0" class="active"></li>
-                      <li data-target="#carousel-references" data-slide-to="1"></li>
-                      <li data-target="#carousel-references" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner" role="listbox">
-                      <div class="item active">
-                        <img src="http://placehold.it/945x640/819AAB/000000?text=slide+1" alt="[Alternative Text]">
-                        <div class="carousel-caption">
-
-                          <h3>Reference Category</h3>
-
-                          <h4>Reference Title</h4>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-                          <p class="cta-link is-hidden-xs">
-                            <a href="modal-references-example.html" class="cta-link__href" data-toggle="modal" data-target="#modal-container"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Learn more</a>
-                          </p>
-
-                        </div>
-                      </div>
-                      <div class="item">
-                        <img src="http://placehold.it/945x640/819AAB/000000?text=slide+2" alt="[Alternative Text]">
-                      </div>
-                      <div class="item">
-                        <img src="http://placehold.it/945x640/819AAB/000000?text=slide+3" alt="[Alternative Text]">
+                <div id="carousel-references" class="carousel slide" data-ride="carousel" data-interval="false">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carousel-references" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-references" data-slide-to="1"></li>
+                    <li data-target="#carousel-references" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <img src="http://placehold.it/945x640/819AAB/000000?text=slide+1" alt="[Alternative Text]">
+                      <div class="carousel-caption">
+                        <p class="u-text-highlight">Reference Category</p>
+                        <h3 class="heading-intermediate">Reference Title</h3>
+                        <p class="u-margin-bottom-double">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p class="cta-link is-hidden-xs">
+                          <a href="modal-references-example.html" class="cta-link__href" data-toggle="modal" data-target="#modal-container"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Learn more</a>
+                        </p>
                       </div>
                     </div>
-
-                    <a class="left carousel-control" href="#carousel-references" role="button" data-slide="prev">
-                      <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
-                      <span class="sr-only">Backward</span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel-references" role="button" data-slide="next">
-                      <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
-                      <span class="sr-only">Forward</span>
-                    </a>
+                    <div class="item">
+                      <img src="http://placehold.it/945x640/819AAB/000000?text=slide+2" alt="[Alternative Text]">
+                      <div class="carousel-caption">
+                        <p class="u-text-highlight">Reference Category</p>
+                        <h3 class="heading-intermediate">Reference Title</h3>
+                        <p class="u-margin-bottom-double">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p class="cta-link is-hidden-xs">
+                          <a href="modal-references-example.html" class="cta-link__href" data-toggle="modal" data-target="#modal-container"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Learn more</a>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img src="http://placehold.it/945x640/819AAB/000000?text=slide+3" alt="[Alternative Text]">
+                      <div class="carousel-caption">
+                        <p class="u-text-highlight">Reference Category</p>
+                        <h3 class="heading-intermediate">Reference Title</h3>
+                        <p class="u-margin-bottom-double">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p class="cta-link is-hidden-xs">
+                          <a href="modal-references-example.html" class="cta-link__href" data-toggle="modal" data-target="#modal-container"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Learn more</a>
+                        </p>
+                      </div>
+                    </div>
                   </div>
 
+                  <a class="left carousel-control" href="#carousel-references" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+                    <span class="sr-only">Backward</span>
+                  </a>
+                  <a class="right carousel-control" href="#carousel-references" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+                    <span class="sr-only">Forward</span>
+                  </a>
                 </div>
+
               </div>
+            </div>
+
+          </div>
 
         </div>
+
       </div>
     </section>
 
@@ -601,7 +615,7 @@
             <div class="innovate__item">
               <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                  <h3 class="u-text-highlight">Heading 3</h3>
+                  <h3 class="u-text-highlight">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
               </div>
