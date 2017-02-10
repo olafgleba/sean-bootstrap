@@ -21,7 +21,7 @@
 
 <body id="totop">
 
-  <header role="banner" class="section-header">
+  <header role="banner" class="section-header" data-spy="affix" data-offset-top="250" data-offset-bottom="200">
 
     <div class="section-frame section-frame--navigation-lang">
       <div class="container">
