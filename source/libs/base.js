@@ -36,7 +36,7 @@ var App = (function() {
     // });
 
     // svg4everybody initialisation
-    //svg4everybody();
+    svg4everybody();
 
   };
 
@@ -62,13 +62,13 @@ $(function() {
 
   App.init();
 
-  $('#modal-example').on('loaded.bs.modal', function (event) {
-    console.log('remote geladen');
-  });
-
-  $('#modal-example').on('hidden.bs.modal', function (event) {
-    console.log('modal verborgen');
-  });
+  // $('#modal-example').on('loaded.bs.modal', function (event) {
+  //   console.log('remote geladen');
+  // });
+  //
+  // $('#modal-example').on('hidden.bs.modal', function (event) {
+  //   console.log('modal verborgen');
+  // });
 
 
   // Simple Hide/Show, toggles text also (by data attribute `data-swap-text/icon`)
@@ -86,6 +86,40 @@ $(function() {
       el.data("swap-text", orig);
       el.data("swap-icon", origIcon);
   });
+
+
+
+
+  // Match to Bootstraps data-toggle for the modal
+  // and attach an onclick event handler
+  $('a[data-toggle="modal"]').on('click', function(e) {
+
+    // Get the target modal (container)
+    var target_modal = $(e.currentTarget).data('target');
+    // Get the address for partial modal content
+    var remote_content = e.currentTarget.href;
+
+    // Address the target modal in the DOM
+    var modal = $(target_modal);
+    // Address the target modal area to populate with remote content
+    var modalContent = $(target_modal + ' .modal-content');
+
+    // On show to the modal, load remote content and show modal at last
+    modal.on('show.bs.modal', function () {
+      modalContent.load(remote_content);
+    })
+    .modal();
+
+    // Empty the DOM after closing the modal; seems neccessary
+    modal.on('hide.bs.modal', function () {
+      $(target_modal + ' .modal-content').html('');
+    })
+
+    // Prevent default behaviour
+    return false;
+  });
+
+
 
 
   // Init smooth scrolling

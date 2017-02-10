@@ -47,7 +47,7 @@
   </header>
 
 
-  <main role="content" id="test">
+  <main role="content">
 
     <section>
       <div class="section-frame section-frame--variant-1">
@@ -234,15 +234,13 @@
                   </ol>
                   <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                      <a href="modal-example-2.html" data-toggle="modal" data-target="#modal-container">
-                        <img src="http://placehold.it/720x480/FF4600/000000?text=slide+1" alt="[Alternative Text]">
-                      </a>
+                      <img src="http://placehold.it/720x480/819AAB/000000?text=slide+1" alt="[Alternative Text]">
                     </div>
                     <div class="item">
-                      <img src="http://placehold.it/720x480/FF4600/000000?text=slide+2" alt="[Alternative Text]">
+                      <img src="http://placehold.it/720x480/819AAB/000000?text=slide+2" alt="[Alternative Text]">
                     </div>
                     <div class="item">
-                      <img src="http://placehold.it/720x480/FF4600/000000?text=slide+3" alt="[Alternative Text]">
+                      <img src="http://placehold.it/720x480/819AAB/000000?text=slide+3" alt="[Alternative Text]">
                     </div>
                   </div>
 
@@ -275,7 +273,7 @@
                   <h4 class="u-text-highlight">Heading</h4>
                   <p class="u-margin-bottom-double">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio illo, eligendi et sint! Accusamus at tempora cumque provident, sapiente consectetur facilis eum sequi incidunt rem ratione explicabo et adipisci qui.</p>
                   <p class="cta-link is-hidden-xs">
-                    <a href="modal-example.html" class="cta-link__href" data-toggle="modal" data-target="#modal-container"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Learn more</a>
+                    <a href="modal-example-2.html" class="cta-link__href" data-toggle="modal" data-target="#modal-container"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Learn more</a>
                   </p>
                 </div>
               </div>
@@ -288,15 +286,13 @@
                   </ol>
                   <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                      <a href="modal-example-2.html" data-toggle="modal" data-target="#modal-container">
-                        <img src="http://placehold.it/720x480/FF4600/000000?text=slide+1" alt="[Alternative Text]">
-                      </a>
+                      <img src="http://placehold.it/720x480/819AAB/000000?text=slide+1" alt="[Alternative Text]">
                     </div>
                     <div class="item">
-                      <img src="http://placehold.it/720x480/FF4600/000000?text=slide+2" alt="[Alternative Text]">
+                      <img src="http://placehold.it/720x480/819AAB/000000?text=slide+2" alt="[Alternative Text]">
                     </div>
                     <div class="item">
-                      <img src="http://placehold.it/720x480/FF4600/000000?text=slide+3" alt="[Alternative Text]">
+                      <img src="http://placehold.it/720x480/819AAB/000000?text=slide+3" alt="[Alternative Text]">
                     </div>
                   </div>
 
@@ -324,15 +320,13 @@
                   </ol>
                   <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                      <a href="modal-example-2.html" data-toggle="modal" data-target="#modal-container">
-                        <img src="http://placehold.it/720x480/FF4600/000000?text=slide+1" alt="[Alternative Text]">
-                      </a>
+                      <img src="http://placehold.it/720x480/819AAB/000000?text=slide+1" alt="[Alternative Text]">
                     </div>
                     <div class="item">
-                      <img src="http://placehold.it/720x480/FF4600/000000?text=slide+2" alt="[Alternative Text]">
+                      <img src="http://placehold.it/720x480/819AAB/000000?text=slide+2" alt="[Alternative Text]">
                     </div>
                     <div class="item">
-                      <img src="http://placehold.it/720x480/FF4600/000000?text=slide+3" alt="[Alternative Text]">
+                      <img src="http://placehold.it/720x480/819AAB/000000?text=slide+3" alt="[Alternative Text]">
                     </div>
                   </div>
 
@@ -351,7 +345,7 @@
                   <h4 class="u-text-highlight">Heading</h4>
                   <p class="u-margin-bottom-double">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio illo, eligendi et sint! Accusamus at tempora cumque provident, sapiente consectetur facilis eum sequi incidunt rem ratione explicabo et adipisci qui.</p>
                   <p class="cta-link is-hidden-xs">
-                    <a href="modal-example.html" class="cta-link__href" data-toggle="modal" data-target="#modal-container"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Learn more</a>
+                    <a href="modal-example-3.html" class="cta-link__href" data-toggle="modal" data-target="#modal-container"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Learn more</a>
                   </p>
                 </div>
               </div>

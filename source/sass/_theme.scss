@@ -93,6 +93,10 @@ img[data-sizes="auto"] {
 }
 
 
+
+
+
+
 /**
  * list of headings
  * @string {String}
@@ -250,12 +254,15 @@ $headings: 'h1, h2, h3, h4, h5, h6';
 .product-innovation { }
 
 .product-innovation__item {
-  margin-bottom: 72px;
+  .carousel {
+    margin-bottom: 72px;
+  }
 }
 
 .product-innovation__box {
   background-color: #fff;
   padding: 24px;
+  margin-bottom: 72px;
 
   @media (min-width: $screen-sm-min) {
     &:last-child {

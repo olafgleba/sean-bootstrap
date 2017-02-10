@@ -24,5 +24,8 @@
 // Import custom variables afterwards
 @import 'font';
 
+// Import the vendor css file
+@import 'vendor';
+
 // Import the project theme css file at last
 @import 'theme';
