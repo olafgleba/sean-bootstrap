@@ -120,8 +120,8 @@
               </div>
               <div class="event-timetable__trigger">
                 <div class="cta-link cta-link--transparent">
-                  <a class="cta-link__href" role="button" data-toggle="collapse" href="#tuesday" aria-expanded="false" aria-controls="tuesday">
-                  <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span><span class="js-text-icon-toggle" data-swap-text="Show Tuesday Events" data-swap-iconclass="glyphicon glyphicon-chevron-down">Hide Tuesday Events</span>
+                  <a class="cta-link__href js-text-icon-toggle" role="button" data-toggle="collapse" data-swap-text="Show Tueday Events" data-swap-icon="glyphicon glyphicon-chevron-down" href="#tuesday" aria-expanded="false" aria-controls="tuesday">
+                  <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span><span class="debug">Hide Tueday Events</span>
                   </a>
                 </div>
               </div>
@@ -157,8 +157,8 @@
               </div>
               <div class="event-timetable__trigger">
                 <div class="cta-link cta-link--transparent">
-                  <a class="cta-link__href" role="button" data-toggle="collapse" href="#wednesday" aria-expanded="false" aria-controls="wednesday">
-                  <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span><span class="js-text-icon-toggle" data-swap-text="Hide Wednesday Events" data-swap-iconclass="glyphicon glyphicon-chevron-up">Show Wednesday Events</span>
+                  <a class="cta-link__href js-text-icon-toggle" role="button" data-toggle="collapse" data-swap-text="Hide Wednesday Events" data-swap-icon="glyphicon glyphicon-chevron-up" href="#wednesday" aria-expanded="false" aria-controls="wednesday">
+                  <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span><span class="debug">Show Wednesday Events</span>
                   </a>
                 </div>
               </div>
@@ -194,8 +194,8 @@
               </div>
               <div class="event-timetable__trigger">
                 <div class="cta-link cta-link--transparent">
-                  <a class="cta-link__href" role="button" data-toggle="collapse" href="#thursday" aria-expanded="false" aria-controls="thursday">
-                  <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span><span class="js-text-icon-toggle" data-swap-text="Hide Thursday Events" data-swap-iconclass="glyphicon glyphicon-chevron-up">Show Thursday Events</span>
+                  <a class="cta-link__href js-text-icon-toggle" role="button" data-toggle="collapse" data-swap-text="Hide Thursday Events" data-swap-icon="glyphicon glyphicon-chevron-up" href="#thursday" aria-expanded="false" aria-controls="thursday">
+                  <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span><span class="debug">Show Thursday Events</span>
                   </a>
                 </div>
               </div>

@@ -71,19 +71,20 @@ $(function() {
   });
 
 
-  // Simple Hide/Show, toggles text also (by data attribute `data-swap-text`)
+  // Simple Hide/Show, toggles text also (by data attribute `data-swap-text/icon`)
 
   $('.js-text-icon-toggle').on('click', function(event) {
       event.preventDefault();
 
       var el = $(this);
-      var orig = el.text();
-      var origIconClass = el.prev().attr('class');
+      var orig = el.find('span').eq(1).text();
+      var origIcon = el.find('span').eq(0).attr('class');
 
-      el.text(el.data("swap-text"));
-      el.prev().attr("class", el.data("swap-iconclass"));
+      el.find('span').eq(1).text(el.data("swap-text"));
+      el.find('span').eq(0).attr('class', el.data("swap-icon"));
+
       el.data("swap-text", orig);
-      el.data("swap-iconclass", origIconClass);
+      el.data("swap-icon", origIcon);
   });
 
 
