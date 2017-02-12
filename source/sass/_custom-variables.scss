@@ -14,23 +14,34 @@ $museo-700: 'Museo Sans W01_700';
 
 // Interface variables
 
-$section-frame-bg: $c_blackiris;
+$section-frame-bg:              $c_blackiris;
 
-$section-frame-variant-1-bg: $c_blackiris_20;
-$section-frame-variant-2-bg: $c_blackiris_40;
-$section-frame-variant-3-bg: $c_lightgrey;
-$section-frame-variant-4-bg: #fff;
+$section-frame-variant-1-bg:    $c_blackiris_20;
+$section-frame-variant-2-bg:    $c_blackiris_40;
+$section-frame-variant-3-bg:    $c_lightgrey;
+$section-frame-variant-4-bg:    #fff;
 
-$heading-color: $c_blackiris;
+$heading-color:                 $c_blackiris;
 
-$border-color: $c_blackiris;
-$border-color-variant-1: $c_blackiris_40;
-$border-color-variant-2: $c_blackiris_60;
+$border-color:                  $c_blackiris;
+$border-color-variant-1:        $c_blackiris_40;
+$border-color-variant-2:        $c_blackiris_60;
 
+$main-nav-active-color:         #fff;
+$main-nav-active-bg-color:      $c_blackiris_60;
 
-$separator-color: $c_blackiris_60;
+$separator-color:               $c_blackiris_60;
 
-$link-color-invert: #fff;
-$link-hover-color-invert: $c_blackiris_40;
+$link-color-invert:             #fff;
+$link-hover-color-invert:       $c_blackiris_40;
 
-$util-text-highlight: $c_blackiris;
+$util-text-highlight:           $c_blackiris;
+
+// responsive nav
+$nav-toggle-color:              #fff;
+$nav-toggle-bg-color:           $c_blackiris;
+
+// responsive nav
+$nav-mobile-lang-color:         #fff;
+$nav-mobile-lang-current-color: $c_blackiris_60;
+$nav-mobile-lang-bg-color:      $c_blackiris;

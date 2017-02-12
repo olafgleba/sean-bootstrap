@@ -21,9 +21,9 @@
 
 <body id="totop">
 
-  <header role="banner" class="section-header" data-spy="affix" data-offset-top="250" data-offset-bottom="200">
+  <header role="banner" class="section-header" data-spy="affix" data-offset-top="350" data-offset-bottom="200">
 
-    <div class="section-frame section-frame--navigation-lang">
+    <div class="section-frame section-frame--navigation-lang is-hidden-xs">
       <div class="container">
         <div class="row">
           <div class="col-xs-12 u-text-right">
@@ -37,11 +37,30 @@
     </div>
 
     <div class="section-frame section-frame--navigation-main">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">Navigation +  Logo</div>
+
+      <div class="main-nav">
+        <div class="container">
+          <div class="main-nav__elements">
+            <div class="main-nav__logo">
+              <h2 class="main-nav__logo-container">Ideal Standard</h2>
+            </div>
+            <div class="main-nav__targets">
+              <a href="#" class="nav-toggle"><span class="draw-menu"></span><span class="text-label">Navigation</span></a>
+              <nav class="nav-collapse">
+                <ul class="main-nav__list">
+                  <li class="cta-link"><a href="#uid-visitus" class="cta-link__href"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Visit us</a></li>
+                  <li class="cta-link"><a href="#uid-products" class="cta-link__href"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Products</a></li>
+                  <li class="cta-link"><a href="#uid-innovation" class="cta-link__href is-active"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Innovation</a></li>
+                  <li class="cta-link"><a href="#uid-contact" class="cta-link__href"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Contact</a></li>
+                  <li class="cta-link--lang current is-hidden-greater-xs">English</li>
+                  <li class="cta-link--lang is-hidden-greater-xs"><a href="de/">Deutsch</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
         </div>
       </div>
+
     </div>
 
   </header>
@@ -49,7 +68,7 @@
 
   <main role="content">
 
-    <section>
+    <section id="uid-visitus">
       <div class="section-frame section-frame--variant-1">
         <div class="container u-padding-y-axis">
           <h1 class="heading-section">Visit our booth</h1>
@@ -233,7 +252,7 @@
     </section>
 
 
-    <section>
+    <section id="uid-products">
       <div class="section-frame section-frame--variant-1">
         <div class="container u-padding-y-axis">
           <h1 class="heading-section">Discover our<br />products</h1>
@@ -587,7 +606,7 @@
     </section>
 
 
-    <section>
+    <section id="uid-innovation">
       <div class="section-frame section-frame--variant-1">
         <div class="container u-padding-y-axis">
           <h1 class="heading-section">See how we<br />innovate</h1>
@@ -661,7 +680,7 @@
     </section>
 
 
-    <section>
+    <section id="uid-contact">
       <div class="section-frame section-frame--variant-1">
         <div class="container u-padding-y-axis">
           <h1 class="heading-section">Get in<br />touch</h1>

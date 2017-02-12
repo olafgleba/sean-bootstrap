@@ -62,17 +62,7 @@ $(function() {
 
   App.init();
 
-  // $('#modal-example').on('loaded.bs.modal', function (event) {
-  //   console.log('remote geladen');
-  // });
-  //
-  // $('#modal-example').on('hidden.bs.modal', function (event) {
-  //   console.log('modal verborgen');
-  // });
-
-
   // Simple Hide/Show, toggles text also (by data attribute `data-swap-text/icon`)
-
   $('.js-text-icon-toggle').on('click', function(event) {
       event.preventDefault();
 
@@ -121,18 +111,24 @@ $(function() {
 
 
 
-
   // Init smooth scrolling
-  // $('a').smoothScroll({
-  //   speed: 500
-  // });
+  $(".main-nav a").smoothScroll({
+      speed: 700,
+      beforeScroll: function(options) {
+        if(window.matchMedia("(min-width: 992px)").matches) {
+            options.offset = -200;
+        } else {
+            options.offset = -300;
+        }
+      }
+  });
 
 
   // Init responsive navigation
-  // var nav = responsiveNav(".nav-collapse", {
-  //   openPos: 'relative',
-  //   customToggle: '.nav-toggle'
-  // });
+  var nav = responsiveNav(".nav-collapse", {
+    openPos: 'relative',
+    customToggle: '.nav-toggle'
+  });
 
   //$('.carousel').carousel()
 

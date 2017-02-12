@@ -9,7 +9,8 @@
     "respimage": "~1.4.0",
     "svg4everybody": "~2.0.0",
     "fontfaceobserver": "^2.0.5",
-    "bootstrap-sass": "^3.3.7"
+    "bootstrap-sass": "^3.3.7",
+    "responsive-nav": "^1.0.39"
   },
   "overrides": {
     "respimage": {
@@ -23,6 +24,9 @@
     },
     "svg4everybody": {
       "main": "dist/svg4everybody.js"
+    },
+    "responsive-nav": {
+      "main": "client/dist/responsive-nav.js"
     }
   },
   "ignore": [
