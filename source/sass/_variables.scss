@@ -98,7 +98,7 @@ $icon-font-svg-id:        "glyphicons_halflingsregular" !default;
 $padding-base-vertical:     6px !default;
 $padding-base-horizontal:   12px !default;
 
-$padding-large-vertical:    10px !default;
+$padding-large-vertical:    16px !default;
 $padding-large-horizontal:  16px !default;
 
 $padding-small-vertical:    5px !default;
@@ -208,10 +208,10 @@ $input-border-radius-large:      $border-radius-large !default;
 $input-border-radius-small:      $border-radius-small !default;
 
 //** Border color for inputs on focus
-$input-border-focus:             #66afe9 !default;
+$input-border-focus:             $form-focus-color;
 
 //** Placeholder text color
-$input-color-placeholder:        #999 !default;
+$input-color-placeholder:        $text-color;
 
 //** Default `.form-control` height
 $input-height-base:              ($line-height-computed + ($padding-base-vertical * 2) + 2) !default;
@@ -223,7 +223,7 @@ $input-height-small:             (floor($font-size-small * $line-height-small) +
 //** `.form-group` margin
 $form-group-margin-bottom:       15px !default;
 
-$legend-color:                   $gray-dark !default;
+$legend-color:                   $brand-primary;
 $legend-border-color:            #e5e5e5 !default;
 
 //** Background color for textual input addons
@@ -750,7 +750,7 @@ $panel-danger-heading-bg:     $state-danger-bg !default;
 //##
 
 //** Padding around the thumbnail image
-$thumbnail-padding:           4px !default;
+$thumbnail-padding:           6px;
 //** Thumbnail background color
 $thumbnail-bg:                $body-bg !default;
 //** Thumbnail border color
@@ -761,7 +761,7 @@ $thumbnail-border-radius:     $border-radius-base !default;
 //** Custom text color for thumbnail captions
 $thumbnail-caption-color:     $text-color !default;
 //** Padding around the thumbnail caption
-$thumbnail-caption-padding:   9px !default;
+$thumbnail-caption-padding:   24px;
 
 
 //== Wells

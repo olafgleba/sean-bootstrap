@@ -22,6 +22,7 @@ $section-frame-variant-3-bg:    $c_lightgrey;
 $section-frame-variant-4-bg:    #fff;
 
 $heading-color:                 $c_blackiris;
+$heading-color-invert:          #fff;
 
 $border-color:                  $c_blackiris;
 $border-color-variant-1:        $c_blackiris_40;
@@ -45,3 +46,15 @@ $nav-toggle-bg-color:           $c_blackiris;
 $nav-mobile-lang-color:         #fff;
 $nav-mobile-lang-current-color: $c_blackiris_60;
 $nav-mobile-lang-bg-color:      $c_blackiris;
+
+
+// forms
+$form-border-color:      $c_blackiris_40;
+//$form-bg-color:          $c_blackiris;
+$form-submit-text-color: $c_blackiris;
+$form-focus-color:       $c_blackiris_60;
+
+
+// cta link
+$cta-link-active-color:         #fff;
+$cta-link-active-bg-color:      $c_blackiris_60;

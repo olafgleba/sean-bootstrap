@@ -10,7 +10,8 @@
     "svg4everybody": "~2.0.0",
     "fontfaceobserver": "^2.0.5",
     "bootstrap-sass": "^3.3.7",
-    "responsive-nav": "^1.0.39"
+    "responsive-nav": "^1.0.39",
+    "ekko-lightbox": "^5.1.1"
   },
   "overrides": {
     "respimage": {
@@ -27,6 +28,9 @@
     },
     "responsive-nav": {
       "main": "client/dist/responsive-nav.js"
+    },
+    "ekko-lightbox": {
+      "main": "dist/ekko-lightbox.js"
     }
   },
   "ignore": [

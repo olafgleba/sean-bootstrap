@@ -112,7 +112,7 @@ $(function() {
 
 
   // Init smooth scrolling
-  $(".main-nav a").smoothScroll({
+  $(".main-nav a, .header-nav a").smoothScroll({
       speed: 700,
       beforeScroll: function(options) {
         if(window.matchMedia("(min-width: 992px)").matches) {
@@ -128,6 +128,12 @@ $(function() {
   var nav = responsiveNav(".nav-collapse", {
     openPos: 'relative',
     customToggle: '.nav-toggle'
+  });
+
+
+  $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
   });
 
   //$('.carousel').carousel()
