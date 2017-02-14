@@ -118,7 +118,7 @@ $(function() {
         if(window.matchMedia("(min-width: 992px)").matches) {
             options.offset = -200;
         } else {
-            options.offset = -300;
+            options.offset = -220;
         }
       }
   });
@@ -131,17 +131,60 @@ $(function() {
   });
 
 
+  // Init lightbox
   $(document).on('click', '[data-toggle="lightbox"]', function(event) {
     event.preventDefault();
     $(this).ekkoLightbox();
   });
 
-  //$('.carousel').carousel()
 
 
 
+  $(window).on('load resize scroll', function() {
+    var frameNavLang = $('.section-frame--navigation-lang').height();
+    var frameNavMain = $('.section-frame--navigation-main').height();
+    var h = $(window).height();
+
+    var resHeight = h - frameNavMain - frameNavLang;
+
+    //$('.section-frame--header').css({minHeight: resHeight});
+
+    //$('#carousel-header').css({minHeight: resHeight});
+
+    console.log('window: '+h);
+    console.log('nav lang: '+frameNavLang);
+    console.log('nav-main: ' +frameNavMain);
+    console.log(resHeight);
+
+    $('.section-header').affix({
+      offset: {
+        top: function() {
+          return (this.top = resHeight)
+        },
+        bottom: function () {
+          //return (this.bottom = $('.footer').outerHeight(true))
+        }
+      }
+    })
+
+
+    // var top = $(window).scrollTop();
+    //
+    // if(top >= 0) {
+    //   $('.main-nav__list').css({display: 'none'})
+    // }
+
+
+
+
+  });
 
   // Bootstrap
+
+
+
+
+
   //
   // $('.header').affix({
   //   offset: {
@@ -154,7 +197,7 @@ $(function() {
 
   //$('.collapse', '.event-timetable').collapse();
 
-
+  //$('.carousel').carousel()
 
   // Bug, funktioniert nicht mit bootstrap affix ( => order des aufrufs)
 
