@@ -595,25 +595,10 @@
                       <h4 class="u-text-highlight">Vorschaubild-Titel der auch länger sein kann</h4>
                       <p class="u-margin-bottom-double">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
                       <p class="cta-link cta-link--full">
-                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-save" aria-hidden="true"></span>Filename-der-sehr-lang-sein-kann.suffix</a>
+                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename-der-sehr-lang-sein-kann.suffix</a>
                       </p>
                       <p class="cta-link cta-link--full">
-                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-save" aria-hidden="true"></span>Filename.suffix</a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                  <div class="thumbnail">
-                    <img data-sizes="auto" src="http://placehold.it/480x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/480x320/ACBBC7/000000?text=480px+width 480w, http://placehold.it/700x420/ACBBC7/000000?text=700px+width 700w" alt="" class="lazyload" />
-                    <div class="caption">
-                      <h4 class="u-text-highlight">Vorschaubild-Titel</h4>
-                      <p class="u-margin-bottom-double">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
-                      <p class="cta-link cta-link--full">
-                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-save" aria-hidden="true"></span>Filename-der-sehr-lang-sein-kann.suffix</a>
-                      </p>
-                      <p class="cta-link cta-link--full">
-                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-save" aria-hidden="true"></span>Filename.suffix</a>
+                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename.suffix</a>
                       </p>
                     </div>
                   </div>
@@ -625,10 +610,25 @@
                       <h4 class="u-text-highlight">Vorschaubild-Titel</h4>
                       <p class="u-margin-bottom-double">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
                       <p class="cta-link cta-link--full">
-                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-save" aria-hidden="true"></span>Filename.suffix</a>
+                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename-der-sehr-lang-sein-kann.suffix</a>
                       </p>
                       <p class="cta-link cta-link--full">
-                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-save" aria-hidden="true"></span>Filename.suffix</a>
+                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename.suffix</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="thumbnail">
+                    <img data-sizes="auto" src="http://placehold.it/480x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/480x320/ACBBC7/000000?text=480px+width 480w, http://placehold.it/700x420/ACBBC7/000000?text=700px+width 700w" alt="" class="lazyload" />
+                    <div class="caption">
+                      <h4 class="u-text-highlight">Vorschaubild-Titel</h4>
+                      <p class="u-margin-bottom-double">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
+                      <p class="cta-link cta-link--full">
+                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename.suffix</a>
+                      </p>
+                      <p class="cta-link cta-link--full">
+                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename.suffix</a>
                       </p>
                     </div>
                   </div>
@@ -640,25 +640,10 @@
                       <h4 class="u-text-highlight">Vorschaubild-Titel</h4>
                       <p class="u-margin-bottom-double">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
                       <p class="cta-link cta-link--full">
-                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-save" aria-hidden="true"></span>Filename.suffix</a>
+                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename.suffix</a>
                       </p>
                       <p class="cta-link cta-link--full">
-                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-save" aria-hidden="true"></span>Filename.suffix</a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                  <div class="thumbnail">
-                    <img data-sizes="auto" src="http://placehold.it/480x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/480x320/ACBBC7/000000?text=480px+width 480w, http://placehold.it/700x420/ACBBC7/000000?text=700px+width 700w" alt="" class="lazyload" />
-                    <div class="caption">
-                      <h4 class="u-text-highlight">Vorschaubild-Titel</h4>
-                      <p class="u-margin-bottom-double">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
-                      <p class="cta-link cta-link--full">
-                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-save" aria-hidden="true"></span>Filename-der-sehr-lang-sein-kann.suffix</a>
-                      </p>
-                      <p class="cta-link cta-link--full">
-                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-save" aria-hidden="true"></span>Filename.suffix</a>
+                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename.suffix</a>
                       </p>
                     </div>
                   </div>
@@ -670,25 +655,10 @@
                       <h4 class="u-text-highlight">Vorschaubild-Titel</h4>
                       <p class="u-margin-bottom-double">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
                       <p class="cta-link cta-link--full">
-                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-save" aria-hidden="true"></span>Filename-der-sehr-lang-sein-kann.suffix</a>
+                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename-der-sehr-lang-sein-kann.suffix</a>
                       </p>
                       <p class="cta-link cta-link--full">
-                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-save" aria-hidden="true"></span>Filename.suffix</a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                  <div class="thumbnail">
-                    <img data-sizes="auto" src="http://placehold.it/480x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/480x320/ACBBC7/000000?text=480px+width 480w, http://placehold.it/700x420/ACBBC7/000000?text=700px+width 700w" alt="" class="lazyload" />
-                    <div class="caption">
-                      <h4 class="u-text-highlight">Vorschaubild-Titel</h4>
-                      <p class="u-margin-bottom-double">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
-                      <p class="cta-link cta-link--full">
-                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-save" aria-hidden="true"></span>Filename-der-sehr-lang-sein-kann.suffix</a>
-                      </p>
-                      <p class="cta-link cta-link--full">
-                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-save" aria-hidden="true"></span>Filename.suffix</a>
+                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename.suffix</a>
                       </p>
                     </div>
                   </div>
@@ -700,25 +670,10 @@
                       <h4 class="u-text-highlight">Vorschaubild-Titel</h4>
                       <p class="u-margin-bottom-double">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
                       <p class="cta-link cta-link--full">
-                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-save" aria-hidden="true"></span>Filename-der-sehr-lang-sein-kann.suffix</a>
+                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename-der-sehr-lang-sein-kann.suffix</a>
                       </p>
                       <p class="cta-link cta-link--full">
-                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-save" aria-hidden="true"></span>Filename.suffix</a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                  <div class="thumbnail">
-                    <img data-sizes="auto" src="http://placehold.it/480x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/480x320/ACBBC7/000000?text=480px+width 480w, http://placehold.it/700x420/ACBBC7/000000?text=700px+width 700w" alt="" class="lazyload" />
-                    <div class="caption">
-                      <h4 class="u-text-highlight">Vorschaubild-Titel</h4>
-                      <p class="u-margin-bottom-double">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
-                      <p class="cta-link cta-link--full">
-                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-save" aria-hidden="true"></span>Filename-der-sehr-lang-sein-kann.suffix</a>
-                      </p>
-                      <p class="cta-link cta-link--full">
-                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-save" aria-hidden="true"></span>Filename.suffix</a>
+                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename.suffix</a>
                       </p>
                     </div>
                   </div>
@@ -730,10 +685,55 @@
                       <h4 class="u-text-highlight">Vorschaubild-Titel</h4>
                       <p class="u-margin-bottom-double">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
                       <p class="cta-link cta-link--full">
-                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-save" aria-hidden="true"></span>Filename-der-sehr-lang-sein-kann.suffix</a>
+                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename-der-sehr-lang-sein-kann.suffix</a>
                       </p>
                       <p class="cta-link cta-link--full">
-                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-save" aria-hidden="true"></span>Filename.suffix</a>
+                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename.suffix</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="thumbnail">
+                    <img data-sizes="auto" src="http://placehold.it/480x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/480x320/ACBBC7/000000?text=480px+width 480w, http://placehold.it/700x420/ACBBC7/000000?text=700px+width 700w" alt="" class="lazyload" />
+                    <div class="caption">
+                      <h4 class="u-text-highlight">Vorschaubild-Titel</h4>
+                      <p class="u-margin-bottom-double">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
+                      <p class="cta-link cta-link--full">
+                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename-der-sehr-lang-sein-kann.suffix</a>
+                      </p>
+                      <p class="cta-link cta-link--full">
+                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename.suffix</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="thumbnail">
+                    <img data-sizes="auto" src="http://placehold.it/480x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/480x320/ACBBC7/000000?text=480px+width 480w, http://placehold.it/700x420/ACBBC7/000000?text=700px+width 700w" alt="" class="lazyload" />
+                    <div class="caption">
+                      <h4 class="u-text-highlight">Vorschaubild-Titel</h4>
+                      <p class="u-margin-bottom-double">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
+                      <p class="cta-link cta-link--full">
+                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename-der-sehr-lang-sein-kann.suffix</a>
+                      </p>
+                      <p class="cta-link cta-link--full">
+                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename.suffix</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="thumbnail">
+                    <img data-sizes="auto" src="http://placehold.it/480x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/480x320/ACBBC7/000000?text=480px+width 480w, http://placehold.it/700x420/ACBBC7/000000?text=700px+width 700w" alt="" class="lazyload" />
+                    <div class="caption">
+                      <h4 class="u-text-highlight">Vorschaubild-Titel</h4>
+                      <p class="u-margin-bottom-double">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
+                      <p class="cta-link cta-link--full">
+                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename-der-sehr-lang-sein-kann.suffix</a>
+                      </p>
+                      <p class="cta-link cta-link--full">
+                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename.suffix</a>
                       </p>
                     </div>
                   </div>
@@ -745,10 +745,10 @@
                       <h4 class="u-text-highlight">Vorschaubild-Titel</h4>
                       <p class="u-margin-bottom-double">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                       <p class="cta-link cta-link--full">
-                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-save" aria-hidden="true"></span>Filename-der-sehr-lang-sein-kann.suffix</a>
+                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename-der-sehr-lang-sein-kann.suffix</a>
                       </p>
                       <p class="cta-link cta-link--full">
-                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-save" aria-hidden="true"></span>Filename.suffix</a>
+                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename.suffix</a>
                       </p>
                     </div>
                   </div>
@@ -760,10 +760,10 @@
                       <h4 class="u-text-highlight">Vorschaubild-Titel</h4>
                       <p class="u-margin-bottom-double">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
                       <p class="cta-link cta-link--full">
-                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-save" aria-hidden="true"></span>Filename-der-sehr-lang-sein-kann.suffix</a>
+                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename-der-sehr-lang-sein-kann.suffix</a>
                       </p>
                       <p class="cta-link cta-link--full">
-                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-save" aria-hidden="true"></span>Filename.suffix</a>
+                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename.suffix</a>
                       </p>
                     </div>
                   </div>

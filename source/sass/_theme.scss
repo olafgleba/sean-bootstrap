@@ -2584,19 +2584,19 @@ $headings: 'h1, h2, h3, h4, h5, h6';
   .glyphicon-arrow-right {
     position: absolute;
     top: 35%;
-    margin-top: -10px;
+    margin-top: 0px;
     z-index: 5;
     display: inline-block;
   }
   .icon-prev,
   .glyphicon-arrow-left {
     left: 45%;
-    margin-left: -10px;
+    margin-left: -5px;
   }
   .icon-next,
   .glyphicon-arrow-right {
     right: 45%;
-    margin-right: -10px;
+    margin-right: -5px;
   }
   .icon-prev,
   .icon-next {
@@ -2695,18 +2695,22 @@ $headings: 'h1, h2, h3, h4, h5, h6';
     .glyphicon-arrow-right,
     .icon-prev,
     .icon-next {
-      width: ($carousel-control-font-size * 1.5);
-      height: ($carousel-control-font-size * 1.5);
-      margin-top: ($carousel-control-font-size / -2);
-      font-size: ($carousel-control-font-size * 1.5);
+      // width: ($carousel-control-font-size * 1.5);
+      // height: ($carousel-control-font-size * 1.5);
+      // margin-top: ($carousel-control-font-size / -2);
+      // font-size: ($carousel-control-font-size * 1.5);
+      width: $carousel-control-font-size;
+      height: $carousel-control-font-size;
+      margin-top: ($carousel-control-font-size / -8);
+      font-size: $carousel-control-font-size;
     }
     .glyphicon-arrow-left,
     .icon-prev {
-      margin-left: ($carousel-control-font-size / -2);
+      margin-left: ($carousel-control-font-size / -3);
     }
     .glyphicon-arrow-right,
     .icon-next {
-      margin-right: ($carousel-control-font-size / -2);
+      margin-right: ($carousel-control-font-size / -3);
     }
   }
 
