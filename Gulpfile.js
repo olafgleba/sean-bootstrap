@@ -81,10 +81,13 @@ if(plugins.util.env.production === true) {
 var app          = 'app/';
 var source       = 'source/';
 var bootstrapDir = './bower_components/bootstrap-sass/';
+var portPHP = '8010';
+var portBS = '9000';
 
 var paths = {
   app:       {
     root:    app,
+    local:  'localhost/devel-environments/sean-bootstrap/app/',
     assets:  app + 'assets/',
     css:     app + 'assets/css/',
     libs:    app + 'assets/libs/',
@@ -115,13 +118,53 @@ var paths = {
  * 1. Adapt path to fit the environment
  */
 
-gulp.task('browser-sync', function() {
+// gulp.task('browser-sync', function() {
+//   bs.init({
+//     server: {
+//       baseDir: app /* 1 */
+//     }
+//   });
+// });
+
+
+
+
+
+/**
+ * Connect to localhost to serve php files
+ * and start syncing
+ *
+ * NOTE: Build will break if Port is already in use
+ */
+
+gulp.task('connect-php', function() {
+  plugins.connectPhp.server({
+    base: paths.app.root,
+    keepalive: true
+  });
+});
+
+
+/**
+ * Connect to localhost to serve php files
+ * and start syncing
+ *
+ * NOTE: Build will break if Port is already in use
+ */
+
+gulp.task('browser-sync', ['connect-php'], function() {
   bs.init({
-    server: {
-      baseDir: app /* 1 */
+    proxy: paths.app.local,
+    port: portBS,
+    open: true,
+    notify: false,
+    ui: {
+      port: portBS
     }
   });
 });
+
+
 
 
 
@@ -131,7 +174,7 @@ gulp.task('browser-sync', function() {
  */
 
 gulp.task('clean:app', function(ca) {
-    return del([paths.app.assets + '{css,libs,img,fonts,docs}/**/*', paths.app.root + '**/*.html'], ca)
+    return del([paths.app.assets + '{css,libs,img,fonts,docs}/**/*', paths.app.root + '**/*.{html,php}'], ca)
 });
 
 
@@ -244,6 +287,7 @@ gulp.task('process:templates', function() {
     .pipe(isProduction ? cachebust.references() : plugins.util.noop()) /* 1 */
     .pipe(plugins.nunjucksRender({
       path: paths.src.tpls,
+      ext: '.php',
       manageEnv: expandEnv
     }))
     .pipe(gulp.dest(paths.app.root));
@@ -256,6 +300,7 @@ gulp.task('process:templates-de', function() {
     .pipe(isProduction ? cachebust.references() : plugins.util.noop()) /* 1 */
     .pipe(plugins.nunjucksRender({
       path: paths.src.tpls,
+      ext: '.php',
       manageEnv: expandEnv
     }))
     .pipe(gulp.dest(paths.app.root + 'de/'));

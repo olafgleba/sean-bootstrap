@@ -1059,6 +1059,35 @@ $headings: 'h1, h2, h3, h4, h5, h6';
 
 
 
+/**
+ * jquery-validation lib related
+ */
+
+// Styling the default error class
+.error {
+  padding: 0.5em 0;
+  color: $form-validation-error-color;
+}
+
+// Spam protection, honeypot
+// .form-group-highlight + .c-form__field {
+//   display: none;
+// }
+
+.form-group-highlight {
+  display: none;
+}
+
+.confirm-form {
+  display: none;
+}
+
+
+
+
+
+
+
 
 
 /**

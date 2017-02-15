@@ -62,6 +62,36 @@ $(function() {
 
   App.init();
 
+
+
+  // Formular Validation
+  $('#contact-form').validate({
+    rules: {
+      name: {
+        required: true
+      },
+      mesg: "required"
+    },
+    messages: {
+      name: {
+        required: "Please enter your name"
+      },
+      mesg: {
+        required: "Please leave us a message"
+      }
+    }
+  });
+
+
+  // $('#submitform').submit(function(ev) {
+  //   $('#confirm-form').show();
+  //   console.log('abgeschickt');
+  //   ev.preventDefault;
+  // })
+
+
+
+
   // Simple Hide/Show, toggles text also (by data attribute `data-swap-text/icon`)
   $('.js-text-icon-toggle').on('click', function(event) {
       event.preventDefault();

@@ -21,6 +21,8 @@
 
 <body id="totop">
 
+  <div class="confirm-form">Danke für Ihre Nachicht</div>
+
   <header role="banner" class="section-header">
 
     <div class="section-frame section-frame--navigation-lang is-hidden-xs">
@@ -81,7 +83,7 @@
     <section>
       <div class="section-frame section-frame--header">
 
-        <!-- <div id="carousel-header" class="carousel carousel-header slide" data-pause="false" data-ride="carousel" data-interval="6000">
+        <div id="carousel-header" class="carousel carousel-header slide" data-pause="false" data-ride="carousel" data-interval="6000">
           <div class="carousel-inner">
             <div class="item active">
                 <div class="fill" style="background-image:url('https://unsplash.it/1200/720.jpg?image=251');"></div>
@@ -93,7 +95,7 @@
                 <div class="fill" style="background-image:url('https://unsplash.it/1200/720.jpg?image=248');"></div>
             </div>
           </div>
-        </div> -->
+        </div>
 
         <div class="container u-index-15 u-padding-y-axis">
           <div class="header-entry">
@@ -955,24 +957,58 @@
               </div>
               <p class="u-margin-bottom-double">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, quibusdam saepe doloribus ullam sequi quos in labore.</p>
 
+              <?php
+              $emailTo = 'og@olafgleba.de';
+              $emailFrom = 'webmaster@olafgleba.de';
+              $emailSubject = "Ideal Standard International | ISH Microsite | Contact form";
+
+              if(isset($_POST['submitform'])) {
+                if(empty($_POST['fullname']) || $_POST['fullname'] == '') {
+
+                  if (!empty($_POST['company'])) {
+                    $company = "(".$_POST['company'].")";
+                  } else {
+                    $company = '';
+                  }
+
+                  $message  = '';
+                  $message .= "On ".date('d/m/Y')." ";
+                  $message .= "$_POST[name] ".$company." has sent us a message:\n\n";
+                  $message .= "$_POST[mesg]";
+
+                  $header  = '';
+                  $header .= "From: ".$emailFrom. "\r\n";
+                  $header .= "X-Mailer: PHP/" . phpversion();
+
+                  mail($emailTo, $emailSubject, $message, $header);
+
+                  $_POST[] = '';
+                }
+              }
+              ?>
+
               <div class="contact-form">
-                <form>
+                <form method='post' action="./" id="contact-form">
                   <legend>Send us a message</legend>
                   <div class="form-group">
                     <label class="sr-only" for="name">Name*</label>
-                    <input type="text" class="form-control" id="name" placeholder="Name*">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Name*" autocomplete="off">
+                  </div>
+                  <div class="form-group form-group-highlight">
+                    <label class="sr-only" for="fullname">Full name</label>
+                    <input type="text" class="form-control" id="fullname" name="fullname" autocomplete="off">
                   </div>
                   <div class="form-group">
                     <label class="sr-only" for="company">Company</label>
-                    <input type="text" class="form-control" id="company" placeholder="Company">
+                    <input type="text" class="form-control" id="company" name="company" placeholder="Company" autocomplete="off">
                   </div>
                   <div class="form-group">
-                    <label class="sr-only" for="company">Message*</label>
-                    <textarea class="form-control" cols="1" rows="8" id="message" placeholder="Message*"></textarea>
+                    <label class="sr-only" for="mesg">Message*</label>
+                    <textarea class="form-control" cols="1" rows="8" id="mesg" name="mesg" placeholder="Message*" autocomplete="off"></textarea>
                   </div>
                   <div class="u-margin-bottom text-right">
                     <p class="cta-link">
-                      <button type="button" class="cta-link__href"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>Send message</button>
+                      <button type="submit" name="submitform" id="submitform" class="cta-link__href"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>Send message</button>
                     </p>
                   </div>
                   <p class="contact-form__note">*) Required fields</p>

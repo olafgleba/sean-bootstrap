@@ -11,7 +11,8 @@
     "fontfaceobserver": "^2.0.5",
     "bootstrap-sass": "^3.3.7",
     "responsive-nav": "^1.0.39",
-    "ekko-lightbox": "^5.1.1"
+    "ekko-lightbox": "^5.1.1",
+    "jquery-validation": "^1.16.0"
   },
   "overrides": {
     "respimage": {
@@ -31,6 +32,11 @@
     },
     "ekko-lightbox": {
       "main": "dist/ekko-lightbox.js"
+    },
+    "jquery-validation": {
+      "main": [
+        "dist/jquery.validate.js"
+      ]
     }
   },
   "ignore": [

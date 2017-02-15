@@ -3,6 +3,7 @@ $c_blackiris_20: #D5DDE3;
 $c_blackiris_40: #ACBBC7;
 $c_blackiris_60: #819AAB;
 
+$c_red: #ee2215;
 $c_lightgrey:    #F5F5F0;
 
 
@@ -53,7 +54,7 @@ $form-border-color:      $c_blackiris_40;
 //$form-bg-color:          $c_blackiris;
 $form-submit-text-color: $c_blackiris;
 $form-focus-color:       $c_blackiris_60;
-
+$form-validation-error-color:      $c_red;
 
 // cta link
 $cta-link-active-color:         #fff;
