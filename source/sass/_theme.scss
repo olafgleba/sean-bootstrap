@@ -193,6 +193,13 @@ $headings: 'h1, h2, h3, h4, h5, h6';
   width: 100%;
   display: block;
   z-index: 10;
+
+  // This has no effect as long as
+  // there are no position declarations.
+  // We need this to animate affix fixed nav
+  // s. class `.affix` below
+  top: -120px;
+
 }
 
 
@@ -321,30 +328,30 @@ $headings: 'h1, h2, h3, h4, h5, h6';
   }
 
 
-  // .affix-top {
-  //   //border: 5px solid red;
-  //   //transform: translateY(-5px);
-  //   //transition: all 2s;
-  // }
-  //
+
+
+
+
+
   .affix {
-    //border: 5px solid red;
-    transform: translateY(0%);
-    transition: transform 1s;
-  }
 
-  .affix-top {
-    //border: 5px solid red;
-    //transform: translateY(-100%);
-    //transition: transform 1s;
-
+    // This resets the `top`declaration
+    // and transits in
+    // s. also class `.section-header` above
+    top: 0;
+    transition: all 0.2s ease-out ;
 
     @media (min-width: $screen-md) {
       .main-nav__list {
-        display: none;
+        visibility: visible;
       }
     }
   }
+
+  .affix-top { }
+
+
+
 
 
 /**
@@ -582,6 +589,10 @@ $headings: 'h1, h2, h3, h4, h5, h6';
 
   @media (min-width: $screen-sm) {
     //justify-content: space-between;
+  }
+
+  @media (min-width: $screen-md) {
+    visibility: hidden;
   }
 
   > li {
@@ -1008,7 +1019,16 @@ $headings: 'h1, h2, h3, h4, h5, h6';
 }
 
 
-// status (media queries related)
+
+
+
+
+/*
+  =====================================================
+  Status classes (media queries related)
+  =====================================================
+*/
+
 .is-hidden-xs {
   @media (max-width: $screen-xs) {
     display: none !important;

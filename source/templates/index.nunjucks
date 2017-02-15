@@ -48,12 +48,22 @@
               <a href="#" class="nav-toggle"><span class="draw-menu"></span><span class="text-label">Menu</span></a>
               <nav class="nav-collapse">
                 <ul class="main-nav__list">
-                  <li class="cta-link"><a href="#uid-visitus" class="cta-link__href"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Visit us</a></li>
-                  <li class="cta-link"><a href="#uid-products" class="cta-link__href"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Products</a></li>
-                  <li class="cta-link"><a href="#uid-innovation" class="cta-link__href is-active"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Innovation</a></li>
-                  <li class="cta-link"><a href="#uid-contact" class="cta-link__href"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Contact</a></li>
+                  <li class="cta-link">
+                    <a href="#uid-visitus" class="cta-link__href"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Visit us</a>
+                  </li>
+                  <li class="cta-link">
+                    <a href="#uid-products" class="cta-link__href"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Products</a>
+                  </li>
+                  <li class="cta-link">
+                    <a href="#uid-innovation" class="cta-link__href"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Innovation</a>
+                  </li>
+                  <li class="cta-link">
+                    <a href="#uid-contact" class="cta-link__href"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Contact</a>
+                  </li>
                   <li class="cta-link--lang current is-hidden-greater-xs">English</li>
-                  <li class="cta-link--lang is-hidden-greater-xs"><a href="de/">Deutsch</a></li>
+                  <li class="cta-link--lang is-hidden-greater-xs">
+                    <a href="de/">Deutsch</a>
+                  </li>
                 </ul>
               </nav>
             </div>
@@ -71,44 +81,19 @@
     <section>
       <div class="section-frame section-frame--header">
 
-        <div id="carousel-header" class="carousel carousel-header slide" data-pause="false" data-ride="carousel" data-interval="6000">
+        <!-- <div id="carousel-header" class="carousel carousel-header slide" data-pause="false" data-ride="carousel" data-interval="6000">
           <div class="carousel-inner">
             <div class="item active">
-                <!-- Set the first background image using inline CSS below. -->
                 <div class="fill" style="background-image:url('https://unsplash.it/1200/720.jpg?image=251');"></div>
             </div>
             <div class="item">
-                <!-- Set the first background image using inline CSS below. -->
                 <div class="fill" style="background-image:url('https://unsplash.it/1200/720.jpg?image=249');"></div>
             </div>
             <div class="item">
-                <!-- Set the first background image using inline CSS below. -->
                 <div class="fill" style="background-image:url('https://unsplash.it/1200/720.jpg?image=248');"></div>
             </div>
           </div>
-        </div>
-
-
-        {# <div id="carousel-header" class="carousel carousel-header slide" data-pause="false" data-ride="carousel" data-interval="6000">
-          <div class="carousel-inner">
-            <div class="item active">
-                <!-- Set the first background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
-                <div class="carousel-caption">
-                    <h2>Caption 1</h2>
-                </div>
-            </div>
-            <div class="item active">
-              <img data-sizes="auto" src="http://placehold.it/480x320/819AAB/000000?text=fallback" data-srcset="https://unsplash.it/720/480.jpg?image=252 480w, https://unsplash.it/1200/768.jpg?image=253 997w" alt="[Alternative Text]" class="lazyload" />
-            </div>
-            <div class="item">
-              <img data-sizes="auto" src="http://placehold.it/480x320/819AAB/000000?text=fallback" data-srcset="https://unsplash.it/720/480.jpg?image=254 480w, https://unsplash.it/1200/768.jpg?image=255 997w" alt="[Alternative Text]" class="lazyload" />
-            </div>
-            <div class="item">
-              <img data-sizes="auto" src="http://placehold.it/480x320/819AAB/000000?text=fallback" data-srcset="https://unsplash.it/720/480.jpg?image=256 480w, https://unsplash.it/1200/768.jpg?image=257 997w" alt="[Alternative Text]" class="lazyload" />
-            </div>
-          </div>
-        </div> #}
+        </div> -->
 
         <div class="container u-index-15 u-padding-y-axis">
           <div class="header-entry">
@@ -130,21 +115,21 @@
               </p>
             </div>
 
-            <div class="header-nav__box is-hidden-md">
+            <div class="header-nav__box">
               <h2>Discover<br />our<br />Products</h2>
               <p class="cta-link cta-link--full">
                 <a href="#uid-products" class="cta-link__href"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Jump to</a>
               </p>
             </div>
 
-            <div class="header-nav__box is-hidden-md">
+            <div class="header-nav__box">
               <h2>See how we<br />innovate</h2>
               <p class="cta-link cta-link--full">
                 <a href="#uid-innovation" class="cta-link__href"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Jump to</a>
               </p>
             </div>
 
-            <div class="header-nav__box is-hidden-md">
+            <div class="header-nav__box">
               <h2>Get in<br />touch</h2>
               <p class="cta-link cta-link--full">
                 <a href="#uid-contact" class="cta-link__href"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Jump to</a>
