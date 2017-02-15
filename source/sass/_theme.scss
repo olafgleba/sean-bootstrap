@@ -562,6 +562,7 @@ $headings: 'h1, h2, h3, h4, h5, h6';
   @media (min-width: $screen-md) {
     flex-basis: 75%;
     align-self: center;
+    order: 1;
   }
 }
 
@@ -633,13 +634,14 @@ $headings: 'h1, h2, h3, h4, h5, h6';
   }
 
   @media (min-width: $screen-sm) {
-    flex-basis: 20%;
-    padding: 1em 1em 1.5em;
+    display: block;
+    padding: 1em 1em 1em;
     align-self: center;
   }
 
   @media (min-width: $screen-md) {
-    order: 1;
+    flex-basis: 20%;
+    order: 2;
     padding-right: 0;
   }
 }
@@ -653,7 +655,11 @@ $headings: 'h1, h2, h3, h4, h5, h6';
   line-height: 1;
   margin-bottom: 0;
 
-  @media (min-width: $screen-md) {
+  // @media (min-width: $screen-md) {
+  //   width: 158px;
+  //   height: 83px;
+  // }
+  @media (min-width: $screen-lg) {
     width: 158px;
     height: 83px;
   }
@@ -2701,7 +2707,7 @@ $headings: 'h1, h2, h3, h4, h5, h6';
       // font-size: ($carousel-control-font-size * 1.5);
       width: $carousel-control-font-size;
       height: $carousel-control-font-size;
-      margin-top: ($carousel-control-font-size / -8);
+      //margin-top: $carousel-control-font-size / -8;
       font-size: $carousel-control-font-size;
     }
     .glyphicon-arrow-left,

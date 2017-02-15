@@ -156,16 +156,16 @@ $(function() {
     console.log('nav-main: ' +frameNavMain);
     console.log(resHeight);
 
-    $('.section-header').affix({
-      offset: {
-        top: function() {
-          return (this.top = resHeight)
-        },
-        bottom: function () {
-          //return (this.bottom = $('.footer').outerHeight(true))
-        }
-      }
-    })
+    // $('.section-header').affix({
+    //   offset: {
+    //     top: function() {
+    //       return (this.top = resHeight)
+    //     },
+    //     bottom: function () {
+    //       //return (this.bottom = $('.footer').outerHeight(true))
+    //     }
+    //   }
+    // })
 
 
     // var top = $(window).scrollTop();
