@@ -81,8 +81,9 @@ if(plugins.util.env.production === true) {
 var app          = 'app/';
 var source       = 'source/';
 var bootstrapDir = './bower_components/bootstrap-sass/';
-var portPHP = '8010';
-var portBS = '9000';
+var portPHP      = '8010';
+var portBS       = '9000';
+var portBSUI     = '9002';
 
 var paths = {
   app:       {
@@ -155,12 +156,8 @@ gulp.task('connect-php', function() {
 gulp.task('browser-sync', ['connect-php'], function() {
   bs.init({
     proxy: paths.app.local,
-    port: portBS,
     open: true,
-    notify: false,
-    ui: {
-      port: portBS
-    }
+    notify: false
   });
 });
 
@@ -228,7 +225,7 @@ gulp.task('compile:sass', function() {
     .pipe(plugins.plumber({errorHandler: onError}))
     .pipe(plugins.sass({outputStyle: 'expanded', includePaths: [paths.bootstrap.dir +  'assets/stylesheets']}))
     .pipe(plugins.rename({suffix: '.min'}))
-    .pipe(plugins.autoprefixer({ browsers: ['last 2 version'] }))
+    .pipe(plugins.autoprefixer({ browsers: ['last 4 version'] }))
     .pipe(isProduction ? cachebust.resources() : plugins.util.noop())
     .pipe(isProduction ? plugins.csso() : plugins.util.noop()) /* 1 */
     .pipe(plugins.size())

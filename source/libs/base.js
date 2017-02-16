@@ -195,7 +195,8 @@ $(function() {
 
     var resHeight = frameNavMain + frameNavLang + frameHeader;
 
-    var resHeight = resHeight + 200;
+    //var resHeight = resHeight + 200;
+    var resHeight = resHeight;
 
     //$('.section-frame--header').css({minHeight: resHeight});
 
@@ -204,7 +205,8 @@ $(function() {
     // console.log('window: '+h);
     // console.log('nav lang: '+frameNavLang);
     // console.log('nav-main: ' +frameNavMain);
-    console.log(resHeight);
+
+    //console.log(resHeight);
 
     $('.section-header').affix({
       offset: {
@@ -222,48 +224,46 @@ $(function() {
     // Init smooth scrolling
     $(".affix .main-nav a").smoothScroll({
         speed: 700,
+        easing: 'swing',
         beforeScroll: function(options) {
           if(window.matchMedia("(min-width: 992px)").matches) {
               options.offset = -200;
               console.log('affix, if');
           } else {
               options.offset = -250;
-              console.log('affix, else');
+              //console.log('affix, else');
           }
         }
     });
 
     $(".affix-top .main-nav a").smoothScroll({
         speed: 700,
+        easing: 'swing',
         beforeScroll: function(options) {
           if(window.matchMedia("(min-width: 992px)").matches) {
               options.offset = -200;
-              console.log('affix-top, if');
+              //console.log('affix-top, if');
           } else {
               options.offset = -455;
-              console.log('affix-top, else');
+              //console.log('affix-top, else');
           }
         }
     });
 
+
     $(".header-nav a").smoothScroll({
         speed: 700,
+        easing: 'swing',
         beforeScroll: function(options) {
           options.offset = -350;
-          console.log('header-nav');
+          //console.log('header-nav');
         }
     });
-
-
 
 
   });
 
   // Bootstrap
-
-
-
-
 
   //
   // $('.header').affix({
@@ -291,40 +291,3 @@ $(function() {
 
 
 });
-
-
-
-
-//$(window).on('load', function() {
-  //var h = $(window).height();
-  //$('.section-frame--navigation').css({minHeight: h});
-
-  // if(iOS){
-  //   fixMobileSafariViewport('frame-head');
-  // }
-  //
-  // if(iOS || android){
-  //   fixBackgroundAttachmentForMobiles('.frame-head');
-  // }
-
-  // if(iOS && $('.frame-head').css('min-height') == '100vh'){
-  //   $('.frame-head').css('min-height', window.innerHeight * 1);
-  // }
-
-
-  // var top = $(window).scrollTop();
-  //
-  // var elemFooter = $('.is-animated-footer');
-  // var elemButton = $('.is-animated-button');
-  // var elemTopBar = $('.is-animated-topbar');
-  // var elemAside  = $('.is-animated-aside');
-  //
-  // (top >= h) ? elemFooter.addClass('is-visible-footer') : elemFooter.removeClass('is-visible-footer');
-  //
-  // (top == 0) ? elemButton.addClass('is-visible-button') : elemButton.removeClass('is-visible-button');
-  //
-  // (top >= h) ? elemTopBar.addClass('is-visible-topbar') : elemTopBar.removeClass('is-visible-topbar');
-  //
-  // (top >= h) ? elemAside.addClass('is-visible-aside') : elemAside.removeClass('is-visible-aside');
-
-//});

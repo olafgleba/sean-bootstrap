@@ -97,7 +97,7 @@
           </div>
         </div>
 
-        <div class="container u-index-15 u-padding-y-axis">
+        <div class="container u-index-16 u-padding-y-axis">
           <div class="header-entry">
             <div class="header-entry__box">
               <h1 class="heading-section heading-section--header">Welcome<br />Ideal<br />Standard<br />at ISH</h1>
@@ -140,7 +140,7 @@
           </div>
         </div>
 
-        <div class="container u-index-15 u-padding-y-axis-large">
+        <div class="container u-index-16 u-padding-y-axis-large">
             <div class="info-scroll">
               <span class="u-color-invert u-text-uppercase">
                 <span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>Please scroll
@@ -165,11 +165,11 @@
           </div>
 
           <div class="row">
-            <div class="col-md-8 u-margin-bottom-double">
+            <div class="col-md-8 u-margin-bottom-twofold">
               <div class="image-box">
                 <p class="image-box__img">
-                  <a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox">
-                      <img data-sizes="auto" src="http://placehold.it/480x320/819AAB/000000?text=fallback" data-srcset="http://placehold.it/480x320/819AAB/000000?text=480px+width 480w, http://placehold.it/720x420/819AAB/000000?text=720px+width 746w" alt="" class="lazyload" />
+                  <a class="image-box__href image-box__href--zoom" href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox">
+                      <img data-sizes="auto" src="http://placehold.it/480x320/819AAB/000000?text=fallback" data-srcset="http://placehold.it/480x320/819AAB/000000?text=480px+width 480w, http://placehold.it/720x420/819AAB/000000?text=720px+width 720w" alt="" class="lazyload" />
                   </a>
                 </p>
               </div>
@@ -223,8 +223,11 @@
                     <div class="col-sm-4">
                       <div class="image-box">
                         <p class="image-box__img">
-                          <img data-sizes="auto" src="http://placehold.it/480x320/FF4600/000000?text=fallback" data-srcset="http://placehold.it/480x320/D5DDE3/000000?text=480px+width 480w, http://placehold.it/660x380/819AAB/000000?text=660px+width 660w" alt="" class="lazyload" />
+                          <a class="image-box__href image-box__href--zoom" href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox">
+                            <img data-sizes="auto" src="http://placehold.it/480x320/FF4600/000000?text=fallback" data-srcset="http://placehold.it/480x320/D5DDE3/000000?text=480px+width 480w, http://placehold.it/660x380/819AAB/000000?text=660px+width 660w" alt="" class="lazyload" />
+                          </a>
                         </p>
+                        <p class="image-box__caption">Zoom icon on hover</p>
                       </div>
                     </div>
                   </div>
@@ -349,7 +352,7 @@
             <h2 class="heading-section--sub heading-section--sub--variant-1">Innovation</h2>
           </div>
 
-          <p class="u-width-60percent u-color-invert u-margin-bottom-quadruple">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate mollitia, consequatur labore facere ea molestias illo quis, ipsum at atque ullam aspernatur suscipit reiciendis! Magnam adipisci laboriosam blanditiis ipsum ut!</p>
+          <p class="u-width-60percent u-color-invert u-margin-bottom-sixfold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate mollitia, consequatur labore facere ea molestias illo quis, ipsum at atque ullam aspernatur suscipit reiciendis! Magnam adipisci laboriosam blanditiis ipsum ut!</p>
 
           <div class="product-innovation">
 
@@ -393,7 +396,7 @@
                 <div class="col-md-5">
                   <div class="product-innovation__box">
                     <h3 class="u-text-highlight">Heading</h3>
-                    <p class="u-margin-bottom-double">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio illo, eligendi et sint! Accusamus at tempora cumque provident, sapiente consectetur facilis eum sequi incidunt rem ratione explicabo et adipisci qui.</p>
+                    <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio illo, eligendi et sint! Accusamus at tempora cumque provident, sapiente consectetur facilis eum sequi incidunt rem ratione explicabo et adipisci qui.</p>
                     <p class="cta-link is-hidden-xs">
                       <a href="modal-example.html" class="cta-link__href" data-toggle="modal" data-target="#modal-container"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Learn more</a>
                     </p>
@@ -407,7 +410,7 @@
                 <div class="col-md-5">
                   <div class="product-innovation__box">
                     <h3 class="u-text-highlight">Heading</h3>
-                    <p class="u-margin-bottom-double">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio illo, eligendi et sint! Accusamus at tempora cumque provident, sapiente consectetur facilis eum sequi incidunt rem ratione explicabo et adipisci qui.</p>
+                    <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio illo, eligendi et sint! Accusamus at tempora cumque provident, sapiente consectetur facilis eum sequi incidunt rem ratione explicabo et adipisci qui.</p>
                     <p class="cta-link is-hidden-xs">
                       <a href="modal-example-2.html" class="cta-link__href" data-toggle="modal" data-target="#modal-container"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Learn more</a>
                     </p>
@@ -491,7 +494,7 @@
                 <div class="col-md-5">
                   <div class="product-innovation__box">
                     <h3 class="u-text-highlight">Heading</h3>
-                    <p class="u-margin-bottom-double">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio illo, eligendi et sint! Accusamus at tempora cumque provident, sapiente consectetur facilis eum sequi incidunt rem ratione explicabo et adipisci qui.</p>
+                    <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio illo, eligendi et sint! Accusamus at tempora cumque provident, sapiente consectetur facilis eum sequi incidunt rem ratione explicabo et adipisci qui.</p>
                     <p class="cta-link is-hidden-xs">
                       <a href="modal-example-3.html" class="cta-link__href" data-toggle="modal" data-target="#modal-container"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Learn more</a>
                     </p>
@@ -502,7 +505,7 @@
 
           </div>
 
-          <div class="text-center u-margin-bottom-double">
+          <div class="text-center u-margin-bottom-twofold">
             <p class="cta-link cta-link--invert">
               <a href="#0" class="cta-link__href"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>Find more ideal standard discover</a>
             </p>
@@ -543,8 +546,11 @@
                 <div class="col-md-4">
                   <div class="image-box">
                     <p class="image-box__img">
-                      <img data-sizes="auto" src="http://placehold.it/480x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/480x320/ACBBC7/000000?text=480px+width 480w, http://placehold.it/720x480/ACBBC7/000000?text=720px+width 720w" alt="" class="lazyload" />
+                      <a class="image-box__href image-box__href--zoom" href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox">
+                        <img data-sizes="auto" src="http://placehold.it/480x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/480x320/ACBBC7/000000?text=480px+width 480w, http://placehold.it/720x480/ACBBC7/000000?text=720px+width 720w" alt="" class="lazyload" />
+                      </a>
                     </p>
+                    <p class="image-box__caption">Zoom icon on hover</p>
                   </div>
                 </div>
                 <div class="col-md-7">
@@ -580,7 +586,7 @@
                     <img data-sizes="auto" src="http://placehold.it/480x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/480x320/ACBBC7/000000?text=480px+width 480w, http://placehold.it/700x420/ACBBC7/000000?text=700px+width 700w" alt="" class="lazyload" />
                     <div class="caption">
                       <h4 class="u-text-highlight">Vorschaubild-Titel der auch länger sein kann</h4>
-                      <p class="u-margin-bottom-double">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
+                      <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
                       <p class="cta-link cta-link--full">
                         <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename-der-sehr-lang-sein-kann.suffix</a>
                       </p>
@@ -595,7 +601,7 @@
                     <img data-sizes="auto" src="http://placehold.it/480x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/480x320/ACBBC7/000000?text=480px+width 480w, http://placehold.it/700x420/ACBBC7/000000?text=700px+width 700w" alt="" class="lazyload" />
                     <div class="caption">
                       <h4 class="u-text-highlight">Vorschaubild-Titel</h4>
-                      <p class="u-margin-bottom-double">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
+                      <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
                       <p class="cta-link cta-link--full">
                         <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename-der-sehr-lang-sein-kann.suffix</a>
                       </p>
@@ -610,7 +616,7 @@
                     <img data-sizes="auto" src="http://placehold.it/480x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/480x320/ACBBC7/000000?text=480px+width 480w, http://placehold.it/700x420/ACBBC7/000000?text=700px+width 700w" alt="" class="lazyload" />
                     <div class="caption">
                       <h4 class="u-text-highlight">Vorschaubild-Titel</h4>
-                      <p class="u-margin-bottom-double">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
+                      <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
                       <p class="cta-link cta-link--full">
                         <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename.suffix</a>
                       </p>
@@ -625,7 +631,7 @@
                     <img data-sizes="auto" src="http://placehold.it/480x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/480x320/ACBBC7/000000?text=480px+width 480w, http://placehold.it/700x420/ACBBC7/000000?text=700px+width 700w" alt="" class="lazyload" />
                     <div class="caption">
                       <h4 class="u-text-highlight">Vorschaubild-Titel</h4>
-                      <p class="u-margin-bottom-double">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
+                      <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
                       <p class="cta-link cta-link--full">
                         <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename.suffix</a>
                       </p>
@@ -640,7 +646,7 @@
                     <img data-sizes="auto" src="http://placehold.it/480x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/480x320/ACBBC7/000000?text=480px+width 480w, http://placehold.it/700x420/ACBBC7/000000?text=700px+width 700w" alt="" class="lazyload" />
                     <div class="caption">
                       <h4 class="u-text-highlight">Vorschaubild-Titel</h4>
-                      <p class="u-margin-bottom-double">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
+                      <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
                       <p class="cta-link cta-link--full">
                         <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename-der-sehr-lang-sein-kann.suffix</a>
                       </p>
@@ -655,7 +661,7 @@
                     <img data-sizes="auto" src="http://placehold.it/480x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/480x320/ACBBC7/000000?text=480px+width 480w, http://placehold.it/700x420/ACBBC7/000000?text=700px+width 700w" alt="" class="lazyload" />
                     <div class="caption">
                       <h4 class="u-text-highlight">Vorschaubild-Titel</h4>
-                      <p class="u-margin-bottom-double">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
+                      <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
                       <p class="cta-link cta-link--full">
                         <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename-der-sehr-lang-sein-kann.suffix</a>
                       </p>
@@ -670,7 +676,7 @@
                     <img data-sizes="auto" src="http://placehold.it/480x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/480x320/ACBBC7/000000?text=480px+width 480w, http://placehold.it/700x420/ACBBC7/000000?text=700px+width 700w" alt="" class="lazyload" />
                     <div class="caption">
                       <h4 class="u-text-highlight">Vorschaubild-Titel</h4>
-                      <p class="u-margin-bottom-double">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
+                      <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
                       <p class="cta-link cta-link--full">
                         <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename-der-sehr-lang-sein-kann.suffix</a>
                       </p>
@@ -685,7 +691,7 @@
                     <img data-sizes="auto" src="http://placehold.it/480x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/480x320/ACBBC7/000000?text=480px+width 480w, http://placehold.it/700x420/ACBBC7/000000?text=700px+width 700w" alt="" class="lazyload" />
                     <div class="caption">
                       <h4 class="u-text-highlight">Vorschaubild-Titel</h4>
-                      <p class="u-margin-bottom-double">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
+                      <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
                       <p class="cta-link cta-link--full">
                         <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename-der-sehr-lang-sein-kann.suffix</a>
                       </p>
@@ -700,7 +706,7 @@
                     <img data-sizes="auto" src="http://placehold.it/480x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/480x320/ACBBC7/000000?text=480px+width 480w, http://placehold.it/700x420/ACBBC7/000000?text=700px+width 700w" alt="" class="lazyload" />
                     <div class="caption">
                       <h4 class="u-text-highlight">Vorschaubild-Titel</h4>
-                      <p class="u-margin-bottom-double">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
+                      <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
                       <p class="cta-link cta-link--full">
                         <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename-der-sehr-lang-sein-kann.suffix</a>
                       </p>
@@ -715,7 +721,7 @@
                     <img data-sizes="auto" src="http://placehold.it/480x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/480x320/ACBBC7/000000?text=480px+width 480w, http://placehold.it/700x420/ACBBC7/000000?text=700px+width 700w" alt="" class="lazyload" />
                     <div class="caption">
                       <h4 class="u-text-highlight">Vorschaubild-Titel</h4>
-                      <p class="u-margin-bottom-double">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
+                      <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
                       <p class="cta-link cta-link--full">
                         <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename-der-sehr-lang-sein-kann.suffix</a>
                       </p>
@@ -730,7 +736,7 @@
                     <img data-sizes="auto" src="http://placehold.it/480x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/480x320/ACBBC7/000000?text=480px+width 480w, http://placehold.it/700x420/ACBBC7/000000?text=700px+width 700w" alt="" class="lazyload" />
                     <div class="caption">
                       <h4 class="u-text-highlight">Vorschaubild-Titel</h4>
-                      <p class="u-margin-bottom-double">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                      <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                       <p class="cta-link cta-link--full">
                         <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename-der-sehr-lang-sein-kann.suffix</a>
                       </p>
@@ -745,7 +751,7 @@
                     <img data-sizes="auto" src="http://placehold.it/480x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/480x320/ACBBC7/000000?text=480px+width 480w, http://placehold.it/700x420/ACBBC7/000000?text=700px+width 700w" alt="" class="lazyload" />
                     <div class="caption">
                       <h4 class="u-text-highlight">Vorschaubild-Titel</h4>
-                      <p class="u-margin-bottom-double">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
+                      <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
                       <p class="cta-link cta-link--full">
                         <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename-der-sehr-lang-sein-kann.suffix</a>
                       </p>
@@ -773,7 +779,7 @@
       <div class="section-frame section-frame--variant-3">
         <div class="container u-padding-y-axis-large u-padding-bottom-large">
           <div>
-            <h2 class="heading-section--sub u-margin-bottom-quadruple">References</h2>
+            <h2 class="heading-section--sub u-margin-bottom-sixfold">References</h2>
           </div>
 
           <div class="references">
@@ -793,7 +799,7 @@
                       <div class="carousel-caption">
                         <p class="u-text-highlight">Reference Category</p>
                         <h3 class="heading-intermediate">Reference Title</h3>
-                        <p class="u-margin-bottom-double">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <p class="cta-link is-hidden-xs">
                           <a href="modal-references-example.html" class="cta-link__href" data-toggle="modal" data-target="#modal-container"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Learn more</a>
                         </p>
@@ -804,7 +810,7 @@
                       <div class="carousel-caption">
                         <p class="u-text-highlight">Reference Category</p>
                         <h3 class="heading-intermediate">Reference Title</h3>
-                        <p class="u-margin-bottom-double">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <p class="cta-link is-hidden-xs">
                           <a href="modal-references-example.html" class="cta-link__href" data-toggle="modal" data-target="#modal-container"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Learn more</a>
                         </p>
@@ -815,7 +821,7 @@
                       <div class="carousel-caption">
                         <p class="u-text-highlight">Reference Category</p>
                         <h3 class="heading-intermediate">Reference Title</h3>
-                        <p class="u-margin-bottom-double">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <p class="cta-link is-hidden-xs">
                           <a href="modal-references-example.html" class="cta-link__href" data-toggle="modal" data-target="#modal-container"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Learn more</a>
                         </p>
@@ -900,8 +906,11 @@
                 <div class="col-md-5">
                   <div class="image-box">
                     <p class="image-box__img">
-                      <img data-sizes="auto" src="http://placehold.it/480x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/480x320/ACBBC7/000000?text=480px+width 480w, http://placehold.it/720x480/ACBBC7/000000?text=720px+width 720w" alt="" class="lazyload" />
+                      <a class="image-box__href image-box__href--zoom" href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox">
+                        <img data-sizes="auto" src="http://placehold.it/480x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/480x320/ACBBC7/000000?text=480px+width 480w, http://placehold.it/720x480/ACBBC7/000000?text=720px+width 720w" alt="" class="lazyload" />
+                      </a>
                     </p>
+                    <p class="image-box__caption">Zoom icon on hover</p>
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -928,13 +937,13 @@
       <div class="section-frame section-frame--variant-3">
         <div class="container u-padding-y-axis-large">
           <div class="row">
-            <div class="col-md-6 u-margin-bottom-quadruple">
+            <div class="col-md-6 u-margin-bottom-sixfold">
               <div>
                 <h2 class="heading-section--sub">Press</h2>
               </div>
 
               <h3 class="u-text-highlight">Press contact</h3>
-              <address class="u-margin-bottom-quadruple">
+              <address class="u-margin-bottom-sixfold">
                 <ul>
                   <li class="u-text-highlight">John Doe</li>
                   <li>Public Relations</li>
@@ -944,7 +953,7 @@
               </address>
 
               <h3 class="u-text-highlight">Download press-kit</h3>
-              <p class="u-margin-bottom-double">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel recusandae totam facere exercitationem est asperiores nisi in adipisci.</p>
+              <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel recusandae totam facere exercitationem est asperiores nisi in adipisci.</p>
               <p class="cta-link">
                 <a href="#0" class="cta-link__href"><span class="glyphicon glyphicon-save" aria-hidden="true"></span>Download press kit</a>
               </p>
@@ -955,7 +964,7 @@
               <div>
                 <h2 class="heading-section--sub">Contact</h2>
               </div>
-              <p class="u-margin-bottom-double">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, quibusdam saepe doloribus ullam sequi quos in labore.</p>
+              <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, quibusdam saepe doloribus ullam sequi quos in labore.</p>
 
               <?php
               $emailTo = 'og@olafgleba.de';

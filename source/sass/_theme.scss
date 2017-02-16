@@ -230,7 +230,7 @@ $headings: 'h1, h2, h3, h4, h5, h6';
 .section-header {
   border-bottom: 5px solid $border-color-variant-1;
   // Because carousel-indicators are set to 15
-  z-index: 96;
+  z-index: 99;
 }
 
 .section-frame--navigation-lang {
@@ -264,12 +264,6 @@ $headings: 'h1, h2, h3, h4, h5, h6';
 }
 
 
-.u-index-15 {
-  position: relative;
-  z-index: 99;
-}
-
-
 .section-frame--innovation {
   background-image: url(../img/lights.svg);
   background-size: contain;
@@ -298,9 +292,9 @@ $headings: 'h1, h2, h3, h4, h5, h6';
  }
 
  .header-entry__box {
-   display: flex;
-   flex-flow: row wrap;
-   flex-basis: 100%;
+  //  display: flex;
+  //  flex-flow: row wrap;
+  //  flex-basis: 100%;
    margin-bottom: 0.5em;
 
    @media (min-width: $screen-sm) {
@@ -318,7 +312,7 @@ $headings: 'h1, h2, h3, h4, h5, h6';
 
    span {
      background-color: $header-location-bg-color;
-     display: block;
+     display: inline-block;
      padding: 0.5em;
    }
 
@@ -348,7 +342,7 @@ $headings: 'h1, h2, h3, h4, h5, h6';
     }
   }
 
-  .affix-top { }
+  .affix-top {  }
 
 
 
@@ -576,7 +570,7 @@ $headings: 'h1, h2, h3, h4, h5, h6';
 
 .main-nav__list {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
 
   list-style: none;
   padding: 0;
@@ -597,6 +591,7 @@ $headings: 'h1, h2, h3, h4, h5, h6';
 
   > li {
     flex-basis: 100%;
+
     margin-left: 1em;
     margin-right: 1em;
     margin-bottom: 1em;
@@ -621,7 +616,6 @@ $headings: 'h1, h2, h3, h4, h5, h6';
     }
 
     @media (min-width: $screen-md) {
-      //flex-basis: 20%;
       margin: 0 1em 0 0;
 
       &:last-of-type{
@@ -636,12 +630,13 @@ $headings: 'h1, h2, h3, h4, h5, h6';
 .main-nav__logo {
   display: flex;
   justify-content: flex-end;
-  align-self: flex-end;
   padding: 1em;
+  margin-right: 0.5em;
+
 
   @media (min-width: $screen-xs) {
     flex-basis: 20%;
-    //padding: 1em;
+    margin-right: 0;
   }
 
   @media (min-width: $screen-sm) {
@@ -651,7 +646,7 @@ $headings: 'h1, h2, h3, h4, h5, h6';
   }
 
   @media (min-width: $screen-md) {
-    flex-basis: 20%;
+    display: inherit;
     order: 2;
     padding-right: 0;
   }
@@ -666,10 +661,6 @@ $headings: 'h1, h2, h3, h4, h5, h6';
   line-height: 1;
   margin-bottom: 0;
 
-  // @media (min-width: $screen-md) {
-  //   width: 158px;
-  //   height: 83px;
-  // }
   @media (min-width: $screen-lg) {
     width: 158px;
     height: 83px;
@@ -831,10 +822,16 @@ $headings: 'h1, h2, h3, h4, h5, h6';
 
 .image-box {
   margin-bottom: 16px;
+  position: relative;
+  z-index: 1;
 }
 
 .image-box__img {
   margin-bottom: 0;
+}
+
+.image-box__href {
+  display: block;
 }
 
 .image-box__caption {
@@ -842,6 +839,41 @@ $headings: 'h1, h2, h3, h4, h5, h6';
   font-size: $font-size-small;
   padding: 12px 0;
 }
+
+
+
+// Element Modifier
+.image-box__href--zoom {
+
+  position: relative;
+  z-index: 3;
+  display: block;
+
+  &::after {
+    font-family: 'Glyphicons Halflings';
+    font-size: $font-size-large;
+    content: '\e015';
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    width: 75px;
+    height: auto;
+    padding: 1em 1.25em 1em;
+    line-height: 1;
+    background-color: rgba(255,255,255, 0.75);
+    opacity: 0;
+    transition: opacity 0.15s linear;
+  }
+
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+  }
+}
+
+
 
 
 
@@ -972,20 +1004,34 @@ $headings: 'h1, h2, h3, h4, h5, h6';
 }
 
 
+
 .u-padding-bottom-large {
   padding-bottom: 7em;
 }
+
 
 
 .u-margin-bottom {
   margin-bottom: 12px;
 }
 
-.u-margin-bottom-double {
+.u-margin-bottom-twofold {
   margin-bottom: 24px;
 }
 
-.u-margin-bottom-quadruple {
+.u-margin-bottom-threefold {
+  margin-bottom: 36px;
+}
+
+.u-margin-bottom-fourfold {
+  margin-bottom: 48px;
+}
+
+.u-margin-bottom-fifthfold {
+  margin-bottom: 60px;
+}
+
+.u-margin-bottom-sixfold {
   margin-bottom: 72px;
 }
 
@@ -1012,13 +1058,16 @@ $headings: 'h1, h2, h3, h4, h5, h6';
   text-transform: uppercase;
 }
 
-
-
 .u-size-intermediate {
   font-size: floor(($font-size-base * 2.55));
 }
 
 
+
+.u-index-16 {
+  position: relative;
+  z-index: 16;
+}
 
 
 
@@ -2688,7 +2737,7 @@ $headings: 'h1, h2, h3, h4, h5, h6';
   position: absolute;
   top: 10px;
   left: 50%;
-  z-index: 15;
+  z-: 15;
   width: 60%;
   height: 25px;
   margin-left: -30%;
