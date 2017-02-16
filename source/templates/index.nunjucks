@@ -72,9 +72,7 @@
           </div>
         </div>
       </div>
-
     </div>
-
   </header>
 
 
@@ -147,7 +145,6 @@
               </span>
             </div>
         </div>
-
       </div>
     </section>
 
@@ -331,9 +328,7 @@
                 </div>
               </div>
             </div>
-
           </div>
-
         </div>
       </div>
     </section>
@@ -382,7 +377,6 @@
                         </a>
                       </div>
                     </div>
-
                     <a class="left carousel-control" href="#carousel-product-innovation-1" role="button" data-slide="prev">
                       <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
                       <span class="sr-only">Backward</span>
@@ -398,7 +392,7 @@
                     <h3 class="u-text-highlight">Heading</h3>
                     <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio illo, eligendi et sint! Accusamus at tempora cumque provident, sapiente consectetur facilis eum sequi incidunt rem ratione explicabo et adipisci qui.</p>
                     <p class="cta-link is-hidden-xs">
-                      <a href="modal-example.html" class="cta-link__href" data-toggle="modal" data-target="#modal-container"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Learn more</a>
+                      <a href="modal-example.php" class="cta-link__href" data-toggle="modal" data-target="#modal-container"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Learn more</a>
                     </p>
                   </div>
                 </div>
@@ -412,7 +406,7 @@
                     <h3 class="u-text-highlight">Heading</h3>
                     <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio illo, eligendi et sint! Accusamus at tempora cumque provident, sapiente consectetur facilis eum sequi incidunt rem ratione explicabo et adipisci qui.</p>
                     <p class="cta-link is-hidden-xs">
-                      <a href="modal-example-2.html" class="cta-link__href" data-toggle="modal" data-target="#modal-container"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Learn more</a>
+                      <a href="modal-example-2.php" class="cta-link__href" data-toggle="modal" data-target="#modal-container"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Learn more</a>
                     </p>
                   </div>
                 </div>
@@ -440,7 +434,6 @@
                         </a>
                       </div>
                     </div>
-
                     <a class="left carousel-control" href="#carousel-product-innovation-2" role="button" data-slide="prev">
                       <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
                       <span class="sr-only">Backward</span>
@@ -480,7 +473,6 @@
                         </a>
                       </div>
                     </div>
-
                     <a class="left carousel-control" href="#carousel-product-innovation-3" role="button" data-slide="prev">
                       <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
                       <span class="sr-only">Backward</span>
@@ -496,23 +488,19 @@
                     <h3 class="u-text-highlight">Heading</h3>
                     <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio illo, eligendi et sint! Accusamus at tempora cumque provident, sapiente consectetur facilis eum sequi incidunt rem ratione explicabo et adipisci qui.</p>
                     <p class="cta-link is-hidden-xs">
-                      <a href="modal-example-3.html" class="cta-link__href" data-toggle="modal" data-target="#modal-container"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Learn more</a>
+                      <a href="modal-example-3.php" class="cta-link__href" data-toggle="modal" data-target="#modal-container"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Learn more</a>
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-
           </div>
-
           <div class="text-center u-margin-bottom-twofold">
             <p class="cta-link cta-link--invert">
               <a href="#0" class="cta-link__href"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>Find more ideal standard discover</a>
             </p>
           </div>
-
         </div>
-
       </div>
 
       <div class="section-frame section-frame--variant-4">
@@ -541,7 +529,6 @@
             </div>
 
             <div class="building-information__item">
-
               <div class="row">
                 <div class="col-md-4">
                   <div class="image-box">
@@ -579,7 +566,6 @@
 
             <div class="building-information__item">
               <h3 class="heading-section--sub heading-section--sub--variant-3">Downloads</h3>
-
               <div class="row equalheight">
                 <div class="col-sm-6 col-md-4">
                   <div class="thumbnail">
@@ -762,17 +748,13 @@
                   </div>
                 </div>
               </div>
-
             </div>
-
             <div class="text-center">
               <p class="cta-link">
                 <a href="#0" class="cta-link__href"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>Learn more about ideal standard and Bim</a>
               </p>
             </div>
-
           </div>
-
         </div>
       </div>
 
@@ -801,7 +783,7 @@
                         <h3 class="heading-intermediate">Reference Title</h3>
                         <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <p class="cta-link is-hidden-xs">
-                          <a href="modal-references-example.html" class="cta-link__href" data-toggle="modal" data-target="#modal-container"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Learn more</a>
+                          <a href="modal-references-example.php" class="cta-link__href" data-toggle="modal" data-target="#modal-container"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Learn more</a>
                         </p>
                       </div>
                     </div>
@@ -812,7 +794,7 @@
                         <h3 class="heading-intermediate">Reference Title</h3>
                         <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <p class="cta-link is-hidden-xs">
-                          <a href="modal-references-example.html" class="cta-link__href" data-toggle="modal" data-target="#modal-container"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Learn more</a>
+                          <a href="modal-references-example.php" class="cta-link__href" data-toggle="modal" data-target="#modal-container"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Learn more</a>
                         </p>
                       </div>
                     </div>
@@ -823,7 +805,7 @@
                         <h3 class="heading-intermediate">Reference Title</h3>
                         <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <p class="cta-link is-hidden-xs">
-                          <a href="modal-references-example.html" class="cta-link__href" data-toggle="modal" data-target="#modal-container"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Learn more</a>
+                          <a href="modal-references-example.php" class="cta-link__href" data-toggle="modal" data-target="#modal-container"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Learn more</a>
                         </p>
                       </div>
                     </div>
@@ -838,14 +820,10 @@
                     <span class="sr-only">Forward</span>
                   </a>
                 </div>
-
               </div>
             </div>
-
           </div>
-
         </div>
-
       </div>
     </section>
 
@@ -919,9 +897,7 @@
                 </div>
               </div>
             </div>
-
           </div>
-
         </div>
       </div>
     </section>
@@ -966,38 +942,10 @@
               </div>
               <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, quibusdam saepe doloribus ullam sequi quos in labore.</p>
 
-              <?php
-              $emailTo = 'og@olafgleba.de';
-              $emailFrom = 'webmaster@olafgleba.de';
-              $emailSubject = "Ideal Standard International | ISH Microsite | Contact form";
-
-              if(isset($_POST['submitform'])) {
-                if(empty($_POST['fullname']) || $_POST['fullname'] == '') {
-
-                  if (!empty($_POST['company'])) {
-                    $company = "(".$_POST['company'].")";
-                  } else {
-                    $company = '';
-                  }
-
-                  $message  = '';
-                  $message .= "On ".date('d/m/Y')." ";
-                  $message .= "$_POST[name] ".$company." has sent us a message:\n\n";
-                  $message .= "$_POST[mesg]";
-
-                  $header  = '';
-                  $header .= "From: ".$emailFrom. "\r\n";
-                  $header .= "X-Mailer: PHP/" . phpversion();
-
-                  mail($emailTo, $emailSubject, $message, $header);
-
-                  $_POST[] = '';
-                }
-              }
-              ?>
-
               <div class="contact-form">
-                <form method='post' action="./" id="contact-form">
+                <div id="js-contact-form__response" class="contact-form__response"></div>
+
+                <form method="post" action="scripts/contactform-en.php" id="contact-form-en">
                   <legend>Send us a message</legend>
                   <div class="form-group">
                     <label class="sr-only" for="name">Name*</label>
@@ -1006,6 +954,10 @@
                   <div class="form-group form-group-highlight">
                     <label class="sr-only" for="fullname">Full name</label>
                     <input type="text" class="form-control" id="fullname" name="fullname" autocomplete="off">
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="email">E-Mail</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="E-Mail" autocomplete="off">
                   </div>
                   <div class="form-group">
                     <label class="sr-only" for="company">Company</label>

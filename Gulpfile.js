@@ -171,7 +171,7 @@ gulp.task('browser-sync', ['connect-php'], function() {
  */
 
 gulp.task('clean:app', function(ca) {
-    return del([paths.app.assets + '{css,libs,img,fonts,docs}/**/*', paths.app.root + '**/*.{html,php}'], ca)
+    return del([paths.app.assets + '{css,libs,img,fonts,docs}/**/*', paths.app.root + '**/*.{html,php}', '!' + paths.app.root + 'scripts/*.php'], ca)
 });
 
 

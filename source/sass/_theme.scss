@@ -781,6 +781,14 @@ $headings: 'h1, h2, h3, h4, h5, h6';
   font-size: $font-size-small;
 }
 
+.contact-form__response {
+  display: none;
+  background-color: $form-response-bg-color;
+  color: $form-response-color;
+  padding: 12px;
+  margin-bottom: 48px;
+}
+
 
 
 
@@ -852,6 +860,12 @@ $headings: 'h1, h2, h3, h4, h5, h6';
   &::after {
     font-family: 'Glyphicons Halflings';
     font-size: $font-size-large;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
     content: '\e015';
     position: absolute;
     z-index: 2;

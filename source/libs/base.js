@@ -65,10 +65,15 @@ $(function() {
 
 
   // Formular Validation
-  $('#contact-form').validate({
+
+  // english
+  $("#contact-form-en").validate({
     rules: {
       name: {
         required: true
+      },
+      email: {
+        email: true
       },
       mesg: "required"
     },
@@ -76,18 +81,85 @@ $(function() {
       name: {
         required: "Please enter your name"
       },
+      email: {
+        email: "Please check your e-mail address"
+      },
       mesg: {
         required: "Please leave us a message"
       }
+    },
+    submitHandler: function(form) {
+      form = $(form);
+      $.ajax({
+        type: form.attr('method'),
+        url: form.attr('action'),
+        data: form.serialize(),
+        success: function (response) {
+          $('#js-contact-form__response').html(
+            "<h3 class='u-text-highlight'>Thank you!</h3><p>Your E-Mail was sent successfully.</p>"
+          )
+          .fadeIn('fast')
+          .delay(3000)
+          .fadeOut('fast');
+
+          // reset form elements
+          form.each(function(i) {
+            $(this).find('input, textarea').val('');
+          });
+        }
+      });
+      return false;
     }
   });
 
 
-  // $('#submitform').submit(function(ev) {
-  //   $('#confirm-form').show();
-  //   console.log('abgeschickt');
-  //   ev.preventDefault;
-  // })
+  // Deutsch
+  $("#contact-form-de").validate({
+    rules: {
+      name: {
+        required: true
+      },
+      email: {
+        email: true
+      },
+      mesg: "required"
+    },
+    messages: {
+      name: {
+        required: "Please enter your name"
+      },
+      email: {
+        email: "Please check your e-mail address"
+      },
+      mesg: {
+        required: "Please leave us a message"
+      }
+    },
+    submitHandler: function(form) {
+      form = $(form);
+      $.ajax({
+        type: form.attr('method'),
+        url: form.attr('action'),
+        data: form.serialize(),
+        success: function (response) {
+          $('#js-contact-form__response').html(
+            "<h3 class='u-text-highlight'>Thank you!</h3><p>Your E-Mail was sent successfully.</p>"
+          )
+          .fadeIn('fast')
+          .delay(3000)
+          .fadeOut('fast');
+
+          // reset form elements
+          form.each(function(i) {
+            $(this).find('input, textarea').val('');
+          });
+        }
+      });
+      return false;
+    }
+  });
+
+
 
 
 
@@ -138,33 +210,6 @@ $(function() {
     // Prevent default behaviour
     return false;
   });
-
-
-
-  // // Init smooth scrolling
-  // $(".main-nav a").smoothScroll({
-  //     speed: 700,
-  //     beforeScroll: function(options) {
-  //       if(window.matchMedia("(min-width: 992px)").matches) {
-  //           options.offset = -200;
-  //       } else {
-  //           options.offset = -250;
-  //       }
-  //     }
-  // });
-
-
-
-  // $(".header-nav a").smoothScroll({
-  //     speed: 700,
-  //     beforeScroll: function(options) {
-  //       if(window.matchMedia("(min-width: 992px)").matches) {
-  //           options.offset = -360;
-  //       } else {
-  //           options.offset = -350;
-  //       }
-  //     }
-  // });
 
 
 
@@ -228,7 +273,7 @@ $(function() {
         beforeScroll: function(options) {
           if(window.matchMedia("(min-width: 992px)").matches) {
               options.offset = -200;
-              console.log('affix, if');
+              //console.log('affix, if');
           } else {
               options.offset = -250;
               //console.log('affix, else');
