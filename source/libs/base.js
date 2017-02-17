@@ -126,13 +126,13 @@ $(function() {
     },
     messages: {
       name: {
-        required: "Please enter your name"
+        required: "Bitte geben Sie Ihren Namen ein"
       },
       email: {
-        email: "Please check your e-mail address"
+        email: "Bitte überprüfen Sie Ihre E-Mail Adresse"
       },
       mesg: {
-        required: "Please leave us a message"
+        required: "Bitte schreiben Sie uns ein paar Worte"
       }
     },
     submitHandler: function(form) {
@@ -143,7 +143,7 @@ $(function() {
         data: form.serialize(),
         success: function (response) {
           $('#js-contact-form__response').html(
-            "<h3 class='u-text-highlight'>Thank you!</h3><p>Your E-Mail was sent successfully.</p>"
+            "<h3 class='u-text-highlight'>Vielen Dank!</h3><p>Ihre E-Mail wurde erfolgreich versandt.</p>"
           )
           .fadeIn('fast')
           .delay(3000)

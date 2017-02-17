@@ -1,0 +1,35 @@
+# Git
+
+Um die lokale Umgebung auf den neuesten Stand zu bringen, immer(!) bevor man anfängt zu arbeiten, auf der Konsole ein `$ git pull` machen.
+
+Falls Git meckert, kann man mit `$ git stash` seine eigenen Änderungen erstmal beiseite legen, so dass ein git pull ausgeführt werden kann.
+
+# Umgebung
+
+Ordnerstruktur:
+
+/app            // hierhin werden die kompilierten Dateien geschoben.
+                // Das ist der Ordner, der auf den Testsever gschoben // wird.
+
+/source         // hier liegen die bearbeitbaren Quelldateien
+
+1. Development
+
+`$ gulp build`
+
+Hierdurch werden die Sachen kompiliert, kopiert und ausgeführt. Es macht sich ein Browserfenster auf. Ändert man jetzt CSS, JS der die Templates, wird jeweils ein Reload/Injection ausgeführt.
+
+2. Deploy
+
+`$ gulp build --production`
+
+Dieser build task macht all das, was der development task auch macht, zus. merged er Dateien, minifiziert sie und und ändern dynamisch Referenzen/Hashes an Dateinamen im Markup (Cachebusting).
+D.h. dann auch, dass auf bspw. einem Testserver alle(!) Dateien hochgeladen werden müssen,- auch wenn nur bspw. das CSS geändert wurde.
+
+
+///////////////////////////////////////////////////////////////
+2. WICHTIG!!!
+
+Wenn das HTML/Markup angefasst werden muss, immer AUSSCHLIESSLICH die Daten im `/source/templates/...` Ordner bearbeiten. Diese Templates werden kompiliert und landen dann im `/app` Ordner.
+Wenn man - was gerne mal passiert - die kompilierten HTML Dateien im `/app` Ordner berabeitet werden, werden die Änderungen bei der nächsten Änderung die einen Task aufruft überschrieben. Und die schöne Arbeit ist weg...
+///////////////////////////////////////////////////////////////
