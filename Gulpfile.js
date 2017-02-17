@@ -88,7 +88,7 @@ var portBSUI     = '9002';
 var paths = {
   app:       {
     root:    app,
-    local:  'localhost/devel-environments/sean-bootstrap/app/',
+    local:  'localhost/devel-freelance/grintsch/sean-bootstrap/app/',
     assets:  app + 'assets/',
     css:     app + 'assets/css/',
     libs:    app + 'assets/libs/',

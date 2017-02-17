@@ -186,29 +186,57 @@ $(function() {
   // and attach an onclick event handler
   $('a[data-toggle="modal"]').on('click', function(e) {
 
+    //var href = $(this).attr('href');
+
     // Get the target modal (container)
+    //var target_modal = $(this).data('target');
     var target_modal = $(e.currentTarget).data('target');
     // Get the address for partial modal content
     var remote_content = e.currentTarget.href;
+    //var remote_content = href;
+
+    //console.log(remote_content);
 
     // Address the target modal in the DOM
     var modal = $(target_modal);
+
+    //console.log(modal.html());
+
     // Address the target modal area to populate with remote content
     var modalContent = $(target_modal + ' .modal-content');
 
+    // Empty the DOM after closing the modal; seems neccessary
+    // modal.on('hide.bs.modal', function () {
+    //   //$(target_modal + ' .modal-content').html('');
+    //   $(target_modal + ' .modal-content').empty();
+    // })
+
     // On show to the modal, load remote content and show modal at last
     modal.on('show.bs.modal', function () {
-      modalContent.load(remote_content);
+      $(target_modal + ' .modal-content').load(remote_content);
     })
     .modal();
 
-    // Empty the DOM after closing the modal; seems neccessary
     modal.on('hide.bs.modal', function () {
+      //console.log(modalContent.html());
+
+      //console.log(modalContent);
+
+      //modelContent.empty();
+      $(target_modal).removeData('bs.modal');
       $(target_modal + ' .modal-content').html('');
-    })
+
+      //$(target_modal + ' .modal-content').empty();
+      //var debug = $(target_modal + ' .modal-content').remove();
+      //var debug = $(target_modal + ' .modal-content').empty();
+      //console.log($(debug).html());
+    });
+
+
 
     // Prevent default behaviour
     return false;
+    //e.preventDefault;
   });
 
 
@@ -217,7 +245,8 @@ $(function() {
   // Init responsive navigation
   var nav = responsiveNav(".nav-collapse", {
     openPos: 'relative',
-    customToggle: '.nav-toggle'
+    customToggle: '.nav-toggle',
+    closeOnNavClick: true
   });
 
 
@@ -231,66 +260,43 @@ $(function() {
 
 
   $(window).on('load resize scroll', function() {
-    var frameNavLang = $('.section-frame--navigation-lang').height();
-    var frameNavMain = $('.section-frame--navigation-main').height();
-    var frameHeader = $('.section-frame--header').height();
+    var frameNavLang = $('.section-frame--navigation-lang').innerHeight();
+    var frameNavMain = $('.section-frame--navigation-main').innerHeight();
+    var frameHeader = $('.section-frame--header').innerHeight();
     var h = $(window).height();
 
-    // var resHeight = h - frameNavMain - frameNavLang;
-
     var resHeight = frameNavMain + frameNavLang + frameHeader;
-
-    //var resHeight = resHeight + 200;
     var resHeight = resHeight;
-
-    //$('.section-frame--header').css({minHeight: resHeight});
-
-    //$('#carousel-header').css({minHeight: resHeight});
-
-    // console.log('window: '+h);
-    // console.log('nav lang: '+frameNavLang);
-    // console.log('nav-main: ' +frameNavMain);
-
-    //console.log(resHeight);
 
     $('.section-header').affix({
       offset: {
         top: function() {
           return (this.top = resHeight)
-        },
-        bottom: function () {
-          //return (this.bottom = $('.footer').outerHeight(true))
         }
       }
     })
 
 
-
-    // Init smooth scrolling
-    $(".affix .main-nav a").smoothScroll({
+    $(".affix .main-nav__list a").smoothScroll({
         speed: 700,
         easing: 'swing',
         beforeScroll: function(options) {
           if(window.matchMedia("(min-width: 992px)").matches) {
-              options.offset = -200;
-              //console.log('affix, if');
+            options.offset = -200;
           } else {
-              options.offset = -250;
-              //console.log('affix, else');
+            options.offset = -220;
           }
         }
     });
 
-    $(".affix-top .main-nav a").smoothScroll({
+    $(".affix-top .main-nav__list a").smoothScroll({
         speed: 700,
         easing: 'swing',
         beforeScroll: function(options) {
           if(window.matchMedia("(min-width: 992px)").matches) {
-              options.offset = -200;
-              //console.log('affix-top, if');
+            options.offset = -200;
           } else {
-              options.offset = -455;
-              //console.log('affix-top, else');
+            options.offset = -455;
           }
         }
     });
@@ -300,8 +306,11 @@ $(function() {
         speed: 700,
         easing: 'swing',
         beforeScroll: function(options) {
-          options.offset = -350;
-          //console.log('header-nav');
+          if(window.matchMedia("(min-width: 992px)").matches) {
+            options.offset = -350;
+          } else {
+            options.offset = -300;
+          }
         }
     });
 
@@ -309,20 +318,6 @@ $(function() {
   });
 
   // Bootstrap
-
-  //
-  // $('.header').affix({
-  //   offset: {
-  //     top: 200
-  //   }
-  // });
-
-  //$('[data-toggle="tooltip"]').tooltip();
-  //$('.dropdown').dropdown();
-
-  //$('.collapse', '.event-timetable').collapse();
-
-  //$('.carousel').carousel()
 
   // Bug, funktioniert nicht mit bootstrap affix ( => order des aufrufs)
 
@@ -333,6 +328,5 @@ $(function() {
   //
   // window.sr = ScrollReveal();
   // sr.reveal('.section-frame', revealOptions, { container: '#test'});
-
 
 });

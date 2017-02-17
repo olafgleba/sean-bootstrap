@@ -2,16 +2,13 @@
 <html lang="en" class="no-js">
 <head>
   <meta charset="utf-8">
-  <title>Sean Bootstrap</title>
+  <title>Ideal Standard International | ISI </title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="robots" content="index, follow" />
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="Olaf Gleba, <og@olafgleba.de>" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  {% include 'includes/favicon.nunjucks' %}
-  {% import 'macros/icon.nunjucks' as icon %}
 
   <link rel="stylesheet" href="assets/css/styles.min.css">
 
@@ -20,9 +17,6 @@
 </head>
 
 <body id="totop">
-
-  <div class="confirm-form">Danke für Ihre Nachicht</div>
-
   <header role="banner" class="section-header">
 
     <div class="section-frame section-frame--navigation-lang is-hidden-xs">
@@ -353,7 +347,16 @@
 
             <div class="product-innovation__item">
               <div class="row">
-                <div class="col-md-6 col-md-offset-1">
+                <div class="col-md-5 col-md-push-7">
+                  <div class="product-innovation__box">
+                    <h3 class="u-text-highlight">Heading</h3>
+                    <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio illo, eligendi et sint! Accusamus at tempora cumque provident, sapiente consectetur facilis eum sequi incidunt rem ratione explicabo et adipisci qui.</p>
+                    <p class="cta-link is-hidden-xs">
+                      <a href="modal-example.php" class="cta-link__href" data-toggle="modal" data-target="#modal-container"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Learn more</a>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-md-offset-1 col-md-pull-5">
                   <div id="carousel-product-innovation-1" class="carousel slide" data-ride="carousel" data-interval="false">
                     <ol class="carousel-indicators">
                       <li data-target="#carousel-product-innovation-1" data-slide-to="0" class="active"></li>
@@ -385,15 +388,6 @@
                       <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
                       <span class="sr-only">Forward</span>
                     </a>
-                  </div>
-                </div>
-                <div class="col-md-5">
-                  <div class="product-innovation__box">
-                    <h3 class="u-text-highlight">Heading</h3>
-                    <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio illo, eligendi et sint! Accusamus at tempora cumque provident, sapiente consectetur facilis eum sequi incidunt rem ratione explicabo et adipisci qui.</p>
-                    <p class="cta-link is-hidden-xs">
-                      <a href="modal-example.php" class="cta-link__href" data-toggle="modal" data-target="#modal-container"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Learn more</a>
-                    </p>
                   </div>
                 </div>
               </div>
@@ -449,7 +443,16 @@
 
             <div class="product-innovation__item">
               <div class="row">
-                <div class="col-md-6 col-md-offset-1">
+                <div class="col-md-5 col-md-push-7">
+                  <div class="product-innovation__box">
+                    <h3 class="u-text-highlight">Heading</h3>
+                    <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio illo, eligendi et sint! Accusamus at tempora cumque provident, sapiente consectetur facilis eum sequi incidunt rem ratione explicabo et adipisci qui.</p>
+                    <p class="cta-link is-hidden-xs">
+                      <a href="modal-example-3.php" class="cta-link__href" data-toggle="modal" data-target="#modal-container"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Learn more</a>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-md-offset-1 col-md-pull-5">
                   <div id="carousel-product-innovation-3" class="carousel slide" data-ride="carousel" data-interval="false">
                     <ol class="carousel-indicators">
                       <li data-target="#carousel-product-innovation-3" data-slide-to="0" class="active"></li>
@@ -481,15 +484,6 @@
                       <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
                       <span class="sr-only">Forward</span>
                     </a>
-                  </div>
-                </div>
-                <div class="col-md-5">
-                  <div class="product-innovation__box">
-                    <h3 class="u-text-highlight">Heading</h3>
-                    <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio illo, eligendi et sint! Accusamus at tempora cumque provident, sapiente consectetur facilis eum sequi incidunt rem ratione explicabo et adipisci qui.</p>
-                    <p class="cta-link is-hidden-xs">
-                      <a href="modal-example-3.php" class="cta-link__href" data-toggle="modal" data-target="#modal-container"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Learn more</a>
-                    </p>
                   </div>
                 </div>
               </div>
@@ -571,10 +565,10 @@
                   <div class="thumbnail">
                     <img data-sizes="auto" src="http://placehold.it/480x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/480x320/ACBBC7/000000?text=480px+width 480w, http://placehold.it/700x420/ACBBC7/000000?text=700px+width 700w" alt="" class="lazyload" />
                     <div class="caption">
-                      <h4 class="u-text-highlight">Vorschaubild-Titel der auch länger sein kann</h4>
+                      <h4 class="u-text-highlight">Heading der auch länger sein kann</h4>
                       <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
                       <p class="cta-link cta-link--full">
-                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename-der-sehr-lang-sein-kann.suffix</a>
+                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename-extended-length.suffix</a>
                       </p>
                       <p class="cta-link cta-link--full">
                         <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename.suffix</a>
@@ -586,10 +580,10 @@
                   <div class="thumbnail">
                     <img data-sizes="auto" src="http://placehold.it/480x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/480x320/ACBBC7/000000?text=480px+width 480w, http://placehold.it/700x420/ACBBC7/000000?text=700px+width 700w" alt="" class="lazyload" />
                     <div class="caption">
-                      <h4 class="u-text-highlight">Vorschaubild-Titel</h4>
+                      <h4 class="u-text-highlight">Heading</h4>
                       <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
                       <p class="cta-link cta-link--full">
-                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename-der-sehr-lang-sein-kann.suffix</a>
+                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename-extended-length.suffix</a>
                       </p>
                       <p class="cta-link cta-link--full">
                         <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename.suffix</a>
@@ -601,7 +595,7 @@
                   <div class="thumbnail">
                     <img data-sizes="auto" src="http://placehold.it/480x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/480x320/ACBBC7/000000?text=480px+width 480w, http://placehold.it/700x420/ACBBC7/000000?text=700px+width 700w" alt="" class="lazyload" />
                     <div class="caption">
-                      <h4 class="u-text-highlight">Vorschaubild-Titel</h4>
+                      <h4 class="u-text-highlight">Heading</h4>
                       <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
                       <p class="cta-link cta-link--full">
                         <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename.suffix</a>
@@ -616,7 +610,7 @@
                   <div class="thumbnail">
                     <img data-sizes="auto" src="http://placehold.it/480x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/480x320/ACBBC7/000000?text=480px+width 480w, http://placehold.it/700x420/ACBBC7/000000?text=700px+width 700w" alt="" class="lazyload" />
                     <div class="caption">
-                      <h4 class="u-text-highlight">Vorschaubild-Titel</h4>
+                      <h4 class="u-text-highlight">Heading</h4>
                       <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
                       <p class="cta-link cta-link--full">
                         <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename.suffix</a>
@@ -631,10 +625,10 @@
                   <div class="thumbnail">
                     <img data-sizes="auto" src="http://placehold.it/480x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/480x320/ACBBC7/000000?text=480px+width 480w, http://placehold.it/700x420/ACBBC7/000000?text=700px+width 700w" alt="" class="lazyload" />
                     <div class="caption">
-                      <h4 class="u-text-highlight">Vorschaubild-Titel</h4>
+                      <h4 class="u-text-highlight">Heading</h4>
                       <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
                       <p class="cta-link cta-link--full">
-                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename-der-sehr-lang-sein-kann.suffix</a>
+                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename-extended-length.suffix</a>
                       </p>
                       <p class="cta-link cta-link--full">
                         <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename.suffix</a>
@@ -646,10 +640,10 @@
                   <div class="thumbnail">
                     <img data-sizes="auto" src="http://placehold.it/480x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/480x320/ACBBC7/000000?text=480px+width 480w, http://placehold.it/700x420/ACBBC7/000000?text=700px+width 700w" alt="" class="lazyload" />
                     <div class="caption">
-                      <h4 class="u-text-highlight">Vorschaubild-Titel</h4>
+                      <h4 class="u-text-highlight">Heading</h4>
                       <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
                       <p class="cta-link cta-link--full">
-                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename-der-sehr-lang-sein-kann.suffix</a>
+                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename-extended-length.suffix</a>
                       </p>
                       <p class="cta-link cta-link--full">
                         <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename.suffix</a>
@@ -661,10 +655,10 @@
                   <div class="thumbnail">
                     <img data-sizes="auto" src="http://placehold.it/480x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/480x320/ACBBC7/000000?text=480px+width 480w, http://placehold.it/700x420/ACBBC7/000000?text=700px+width 700w" alt="" class="lazyload" />
                     <div class="caption">
-                      <h4 class="u-text-highlight">Vorschaubild-Titel</h4>
+                      <h4 class="u-text-highlight">Heading</h4>
                       <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
                       <p class="cta-link cta-link--full">
-                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename-der-sehr-lang-sein-kann.suffix</a>
+                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename-extended-length.suffix</a>
                       </p>
                       <p class="cta-link cta-link--full">
                         <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename.suffix</a>
@@ -676,10 +670,10 @@
                   <div class="thumbnail">
                     <img data-sizes="auto" src="http://placehold.it/480x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/480x320/ACBBC7/000000?text=480px+width 480w, http://placehold.it/700x420/ACBBC7/000000?text=700px+width 700w" alt="" class="lazyload" />
                     <div class="caption">
-                      <h4 class="u-text-highlight">Vorschaubild-Titel</h4>
+                      <h4 class="u-text-highlight">Heading</h4>
                       <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
                       <p class="cta-link cta-link--full">
-                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename-der-sehr-lang-sein-kann.suffix</a>
+                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename-extended-length.suffix</a>
                       </p>
                       <p class="cta-link cta-link--full">
                         <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename.suffix</a>
@@ -691,10 +685,10 @@
                   <div class="thumbnail">
                     <img data-sizes="auto" src="http://placehold.it/480x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/480x320/ACBBC7/000000?text=480px+width 480w, http://placehold.it/700x420/ACBBC7/000000?text=700px+width 700w" alt="" class="lazyload" />
                     <div class="caption">
-                      <h4 class="u-text-highlight">Vorschaubild-Titel</h4>
+                      <h4 class="u-text-highlight">Heading</h4>
                       <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
                       <p class="cta-link cta-link--full">
-                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename-der-sehr-lang-sein-kann.suffix</a>
+                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename-extended-length.suffix</a>
                       </p>
                       <p class="cta-link cta-link--full">
                         <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename.suffix</a>
@@ -706,10 +700,10 @@
                   <div class="thumbnail">
                     <img data-sizes="auto" src="http://placehold.it/480x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/480x320/ACBBC7/000000?text=480px+width 480w, http://placehold.it/700x420/ACBBC7/000000?text=700px+width 700w" alt="" class="lazyload" />
                     <div class="caption">
-                      <h4 class="u-text-highlight">Vorschaubild-Titel</h4>
+                      <h4 class="u-text-highlight">Heading</h4>
                       <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
                       <p class="cta-link cta-link--full">
-                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename-der-sehr-lang-sein-kann.suffix</a>
+                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename-extended-length.suffix</a>
                       </p>
                       <p class="cta-link cta-link--full">
                         <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename.suffix</a>
@@ -721,10 +715,10 @@
                   <div class="thumbnail">
                     <img data-sizes="auto" src="http://placehold.it/480x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/480x320/ACBBC7/000000?text=480px+width 480w, http://placehold.it/700x420/ACBBC7/000000?text=700px+width 700w" alt="" class="lazyload" />
                     <div class="caption">
-                      <h4 class="u-text-highlight">Vorschaubild-Titel</h4>
+                      <h4 class="u-text-highlight">Heading</h4>
                       <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                       <p class="cta-link cta-link--full">
-                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename-der-sehr-lang-sein-kann.suffix</a>
+                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename-extended-length.suffix</a>
                       </p>
                       <p class="cta-link cta-link--full">
                         <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename.suffix</a>
@@ -736,10 +730,10 @@
                   <div class="thumbnail">
                     <img data-sizes="auto" src="http://placehold.it/480x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/480x320/ACBBC7/000000?text=480px+width 480w, http://placehold.it/700x420/ACBBC7/000000?text=700px+width 700w" alt="" class="lazyload" />
                     <div class="caption">
-                      <h4 class="u-text-highlight">Vorschaubild-Titel</h4>
+                      <h4 class="u-text-highlight">Heading</h4>
                       <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat ullam saepe quibusdam tempore placeat quisquam.</p>
                       <p class="cta-link cta-link--full">
-                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename-der-sehr-lang-sein-kann.suffix</a>
+                        <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename-extended-length.suffix</a>
                       </p>
                       <p class="cta-link cta-link--full">
                         <a href="#0" class="cta-link__href" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Filename.suffix</a>
@@ -779,9 +773,9 @@
                     <div class="item active">
                       <img data-sizes="auto" src="http://placehold.it/480x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/480x320/ACBBC7/000000?text=480px+width 480w, http://placehold.it/720x480/ACBBC7/000000?text=Slide+1+/+720px+width 720w" alt="" class="lazyload" />
                       <div class="carousel-caption">
-                        <p class="u-text-highlight">Reference Category</p>
-                        <h3 class="heading-intermediate">Reference Title</h3>
-                        <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p class="u-text-highlight is-hidden-xs">Reference Category</p>
+                        <h3 class="heading-intermediate references__title">Reference Title</h3>
+                        <p class="u-margin-bottom-twofold is-hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <p class="cta-link is-hidden-xs">
                           <a href="modal-references-example.php" class="cta-link__href" data-toggle="modal" data-target="#modal-container"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Learn more</a>
                         </p>
@@ -790,9 +784,9 @@
                     <div class="item">
                       <img data-sizes="auto" src="http://placehold.it/480x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/480x320/ACBBC7/000000?text=480px+width 480w, http://placehold.it/720x480/ACBBC7/000000?text=Slide+1+/+720px+width 720w" alt="" class="lazyload" />
                       <div class="carousel-caption">
-                        <p class="u-text-highlight">Reference Category</p>
-                        <h3 class="heading-intermediate">Reference Title</h3>
-                        <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p class="u-text-highlight is-hidden-xs">Reference Category</p>
+                        <h3 class="heading-intermediate references__title">Reference Title</h3>
+                        <p class="u-margin-bottom-twofold is-hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <p class="cta-link is-hidden-xs">
                           <a href="modal-references-example.php" class="cta-link__href" data-toggle="modal" data-target="#modal-container"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Learn more</a>
                         </p>
@@ -801,9 +795,9 @@
                     <div class="item">
                       <img data-sizes="auto" src="http://placehold.it/480x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/480x320/ACBBC7/000000?text=480px+width 480w, http://placehold.it/720x480/ACBBC7/000000?text=Slide+1+/+720px+width 720w" alt="" class="lazyload" />
                       <div class="carousel-caption">
-                        <p class="u-text-highlight">Reference Category</p>
-                        <h3 class="heading-intermediate">Reference Title</h3>
-                        <p class="u-margin-bottom-twofold">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p class="u-text-highlight is-hidden-xs">Reference Category</p>
+                        <h3 class="heading-intermediate references__title">Reference Title</h3>
+                        <p class="u-margin-bottom-twofold is-hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <p class="cta-link is-hidden-xs">
                           <a href="modal-references-example.php" class="cta-link__href" data-toggle="modal" data-target="#modal-container"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Learn more</a>
                         </p>
@@ -1012,9 +1006,7 @@
 
   <div class="modal fade" id="modal-container" role="dialog" aria-labelledby="productDetailsContainer">
     <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <p>Placeholder for remote content</p>
-      </div><!-- /.modal-content -->
+      <div class="modal-content"></div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
 
