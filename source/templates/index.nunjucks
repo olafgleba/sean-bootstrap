@@ -560,7 +560,7 @@
 
             <div class="building-information__item">
               <h3 class="heading-section--sub heading-section--sub--variant-3">Downloads</h3>
-              <div class="row equalheight">
+              <div class="row">
                 <div class="col-sm-6 col-md-4">
                   <div class="thumbnail">
                     <img data-sizes="auto" src="http://placehold.it/480x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/480x320/ACBBC7/000000?text=480px+width 480w, http://placehold.it/700x420/ACBBC7/000000?text=700px+width 700w" alt="" class="lazyload" />

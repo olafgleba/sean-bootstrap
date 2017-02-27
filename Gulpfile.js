@@ -80,7 +80,7 @@ if(plugins.util.env.production === true) {
 
 var app          = 'app/';
 var source       = 'source/';
-var bootstrapDir = './bower_components/bootstrap-sass/';
+var bootstrapDir = 'bower_components/bootstrap-sass/';
 var portPHP      = '8010';
 var portBS       = '9000';
 var portBSUI     = '9002';
