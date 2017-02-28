@@ -1,37 +1,46 @@
-<div class="modal-header">
-  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="glyphicon glyphicon-remove"></span></button>
-</div>
-<div class="modal-body">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-6">
-        <h4 class="heading-section--sub heading-section--sub--variant-2 u-margin-bottom">Productname 3</h4>
+<div class="modal fade" role="dialog" aria-labelledby="productDetailsContainer">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
 
-        <p class="u-text-highlight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate mollitia, consequatur labore facere ea molestias illo quis, ipsum at atque ullam aspernatur suscipit reiciendis!</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate mollitia, consequatur labore facere ea molestias illo quis, ipsum at atque ullam aspernatur suscipit reiciendis! Magnam adipisci laboriosam blanditiis ipsum ut!</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate mollitia, consequatur labore facere ea <a href="#0">molestias illo quis</a>, ipsum at atque ullam aspernatur suscipit reiciendis! Magnam adipisci laboriosam blanditiis ipsum ut!</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate mollitia, consequatur labore facere ea molestias illo quis, ipsum at atque ullam aspernatur suscipit reiciendis! Magnam adipisci laboriosam blanditiis ipsum ut!</p>
-
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="glyphicon glyphicon-remove"></span></button>
       </div>
-      <div class="col-md-6">
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6">
+              <h4 class="heading-section--sub heading-section--sub--variant-2 u-margin-bottom">Productname 3</h4>
 
-        <div class="image-box">
-          <p class="image-box__img">
-            <img data-sizes="auto" src="http://placehold.it/385x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/384x320/ACBBC7/000000?text=384px+width 384w, http://placehold.it/508x380/ACBBC7/000000?text=508px+width 508w" alt="" class="lazyload" />
-          </p>
-          <p class="image-box__caption">Image caption possible...</p>
+              <p class="u-text-highlight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate mollitia, consequatur labore facere ea molestias illo quis, ipsum at atque ullam aspernatur suscipit reiciendis!</p>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate mollitia, consequatur labore facere ea molestias illo quis, ipsum at atque ullam aspernatur suscipit reiciendis! Magnam adipisci laboriosam blanditiis ipsum ut!</p>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate mollitia, consequatur labore facere ea <a href="#0">molestias illo quis</a>, ipsum at atque ullam aspernatur suscipit reiciendis! Magnam adipisci laboriosam blanditiis ipsum ut!</p>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate mollitia, consequatur labore facere ea molestias illo quis, ipsum at atque ullam aspernatur suscipit reiciendis! Magnam adipisci laboriosam blanditiis ipsum ut!</p>
+
+            </div>
+            <div class="col-md-6">
+
+              <div class="image-box">
+                <p class="image-box__img">
+                  <img data-sizes="auto" src="http://placehold.it/385x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/384x320/ACBBC7/000000?text=384px+width 384w, http://placehold.it/508x380/ACBBC7/000000?text=508px+width 508w" alt="" class="lazyload" />
+                </p>
+                <p class="image-box__caption">Image caption possible...</p>
+              </div>
+
+              <div class="image-box">
+                <p class="image-box__img">
+                  <img data-sizes="auto" src="http://placehold.it/385x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/384x320/ACBBC7/000000?text=384px+width 384w, http://placehold.it/508x380/ACBBC7/000000?text=508px+width 508w" alt="" class="lazyload" />
+                </p>
+              </div>
+
+            </div>
+          </div>
         </div>
-
-        <div class="image-box">
-          <p class="image-box__img">
-            <img data-sizes="auto" src="http://placehold.it/385x320/ACBBC7/000000?text=fallback" data-srcset="http://placehold.it/384x320/ACBBC7/000000?text=384px+width 384w, http://placehold.it/508x380/ACBBC7/000000?text=508px+width 508w" alt="" class="lazyload" />
-          </p>
-        </div>
-
       </div>
-    </div>
-  </div>
-</div>
+
+    </div><!-- /.modal-content -->
+
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

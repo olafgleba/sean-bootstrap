@@ -25,15 +25,7 @@ var App = (function() {
   var init = function() {
 
     // FastClick initialisation
-    //FastClick.attach(document.body);
-
-    // Avoid FOIT on web font loading, s. https://github.com/bramstein/fontfaceobserver
-    // var font = new FontFaceObserver('proxima-nova-1');
-    // font.load().then(function() {
-    //   document.documentElement.className += ' fonts-loaded';
-    // }, function() {
-    //   console.log('Font is not available after waiting 3 seconds');
-    // });
+    FastClick.attach(document.body);
 
     // svg4everybody initialisation
     svg4everybody();
@@ -182,62 +174,40 @@ $(function() {
 
 
 
-  // Match to Bootstraps data-toggle for the modal
-  // and attach an onclick event handler
-  $('a[data-toggle="modal"]').on('click', function(e) {
-
-    //var href = $(this).attr('href');
-
-    // Get the target modal (container)
-    //var target_modal = $(this).data('target');
-    var target_modal = $(e.currentTarget).data('target');
-    // Get the address for partial modal content
-    var remote_content = e.currentTarget.href;
-    //var remote_content = href;
-
-    //console.log(remote_content);
-
-    // Address the target modal in the DOM
-    var modal = $(target_modal);
-
-    //console.log(modal.html());
-
-    // Address the target modal area to populate with remote content
-    var modalContent = $(target_modal + ' .modal-content');
-
-    // Empty the DOM after closing the modal; seems neccessary
-    // modal.on('hide.bs.modal', function () {
-    //   //$(target_modal + ' .modal-content').html('');
-    //   $(target_modal + ' .modal-content').empty();
-    // })
-
-    // On show to the modal, load remote content and show modal at last
-    modal.on('show.bs.modal', function () {
-      $(target_modal + ' .modal-content').load(remote_content);
-    })
-    .modal();
-
-    modal.on('hide.bs.modal', function () {
-      //console.log(modalContent.html());
-
-      //console.log(modalContent);
-
-      //modelContent.empty();
-      $(target_modal).removeData('bs.modal');
-      $(target_modal + ' .modal-content').html('');
-
-      //$(target_modal + ' .modal-content').empty();
-      //var debug = $(target_modal + ' .modal-content').remove();
-      //var debug = $(target_modal + ' .modal-content').empty();
-      //console.log($(debug).html());
-    });
 
 
+  // Bootstrap modals with remote targets
 
-    // Prevent default behaviour
-    return false;
-    //e.preventDefault;
-  });
+  // Create jQuery body object
+  var $body = $('body'),
+
+  // Use a tags with 'class="is-modal-trigger"' as the triggers
+  $modalTriggers = $('a.is-modal-trigger'),
+
+  // Trigger event handler
+  openModal = function(evt) {
+    var $trigger = $(this),
+    modalPath = $trigger.attr('href'),
+    $newModal,
+
+    removeModal = function(evt) {
+      $newModal.off('hidden.bs.modal');
+      $newModal.remove();
+    },
+
+    showModal = function(data) {
+      $body.append(data);
+      $newModal = $('.modal').last();
+      $newModal.modal('show');
+      $newModal.on('hidden.bs.modal',removeModal);
+    };
+
+    $.get(modalPath,showModal);
+    evt.preventDefault();
+  };
+
+  $modalTriggers.on('click',openModal);
+
 
 
 
@@ -250,6 +220,9 @@ $(function() {
   });
 
 
+
+
+
   // Init lightbox
   $(document).on('click', '[data-toggle="lightbox"]', function(event) {
     event.preventDefault();
@@ -259,6 +232,7 @@ $(function() {
 
 
 
+  // Init and declare target scrolling + fixed navigation
   $(window).on('load resize scroll', function() {
     var frameNavLang = $('.section-frame--navigation-lang').innerHeight();
     var frameNavMain = $('.section-frame--navigation-main').innerHeight();
@@ -317,16 +291,5 @@ $(function() {
 
   });
 
-  // Bootstrap
-
-  // Bug, funktioniert nicht mit bootstrap affix ( => order des aufrufs)
-
-  // Scrollreveal
-  // var revealOptions = {
-  //   scale: 0.75
-  // }
-  //
-  // window.sr = ScrollReveal();
-  // sr.reveal('.section-frame', revealOptions, { container: '#test'});
 
 });
