@@ -239,55 +239,79 @@ $(function() {
     var frameHeader = $('.section-frame--header').innerHeight();
     var h = $(window).height();
 
+
+    // Fixed header behaviour
     var resHeight = frameNavMain + frameNavLang + frameHeader;
     var resHeight = resHeight;
 
-    $('.section-header').affix({
-      offset: {
-        top: function() {
-          return (this.top = resHeight)
-        }
-      }
-    })
+    var top = $(window).scrollTop();
+    var elemNav = $('.is-animated-nav');
+    var elemSection = $('.section-header');
+    var elemMainNavList = $('.main-nav__list');
+
+    (top >= (resHeight + 200)) ? elemSection.addClass('is-animated-nav') : elemSection.removeClass('is-animated-nav');
+
+    (top >= (resHeight + 200)) ? elemMainNavList.addClass('is-visible') : elemMainNavList.removeClass('is-visible');
+
+    (top >= (resHeight + 300)) ? elemSection.addClass('is-visible-nav') : elemSection.removeClass('is-visible-nav');
+
+    (top >= (resHeight + 300)) ? elemSection.addClass('is-fixed') : elemSection.removeClass('is-fixed');
 
 
-    $(".affix .main-nav__list a").smoothScroll({
+    // Smooth scroll - Main nav
+    $(".main-nav__list a").smoothScroll({
         speed: 700,
         easing: 'swing',
         beforeScroll: function(options) {
-          if(window.matchMedia("(min-width: 992px)").matches) {
-            options.offset = -200;
+          var sTgt = $(options.scrollTarget).attr('id');
+
+          if (sTgt == 'uid-visitus') {
+            options.offset = 50;
           } else {
-            options.offset = -220;
+            options.offset = -150;
+          }
+
+          if(window.matchMedia("(min-width: 480px)").matches) {
+            if (sTgt == 'uid-visitus') {
+              options.offset = 100;
+            } else {
+              options.offset = -180;
+            }
+          }
+
+          if(window.matchMedia("(min-width: 768px)").matches) {
+            if (sTgt == 'uid-visitus') {
+              options.offset = 170;
+            } else {
+              options.offset = -240;
+            }
+          }
+
+          if(window.matchMedia("(min-width: 992px)").matches) {
+            if (sTgt == 'uid-visitus') {
+              options.offset = 110;
+            } else {
+              options.offset = -180;
+            }
           }
         }
     });
 
-    $(".affix-top .main-nav__list a").smoothScroll({
-        speed: 700,
-        easing: 'swing',
-        beforeScroll: function(options) {
-          if(window.matchMedia("(min-width: 992px)").matches) {
-            options.offset = -200;
-          } else {
-            options.offset = -455;
-          }
-        }
-    });
 
-
+    // Smooth scroll - Header block nav
     $(".header-nav a").smoothScroll({
         speed: 700,
         easing: 'swing',
         beforeScroll: function(options) {
-          if(window.matchMedia("(min-width: 992px)").matches) {
-            options.offset = -350;
+          var sTgt = $(options.scrollTarget).attr('id');
+
+          if (sTgt == 'uid-visitus') {
+            options.offset = -30;
           } else {
-            options.offset = -300;
+            options.offset = -350;
           }
         }
     });
-
 
   });
 
