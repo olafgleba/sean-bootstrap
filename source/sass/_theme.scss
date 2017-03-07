@@ -434,13 +434,11 @@ $headings: 'h1, h2, h3, h4, h5, h6';
  */
 
 .main-nav__elements {
-  // display: flex;
-  // flex-flow: column nowrap;
-  //display: block;
 
   @media (min-width: $screen-sm) {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row wrap;
+    justify-content: center;
   }
 
   @media (min-width: $screen-md) {
